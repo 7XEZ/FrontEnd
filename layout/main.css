@@ -14,7 +14,6 @@ body{
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat; 
   background-size: cover; 
-
 }
 
 .container{
@@ -25,7 +24,7 @@ body{
 header{
   position: relative;
   min-height: 123px;
-  top: 26.64px;
+  padding-top: 26.64px;
 }
 
 .logo{
@@ -130,10 +129,6 @@ max-width: 50%;
 }
 
 .hot-tours__head{
-  display: inline-block;
-  width: 230px;
-  position: relative;
-  width: 50%;
   margin-bottom: 50px;
 }
 
@@ -149,7 +144,7 @@ max-width: 50%;
 .hot-tours__item{
   display: inline-block;
   width:362px;
-  height: 449pxpx;
+  min-height: 449px;
   margin-right: 15px;
 }
 
@@ -162,7 +157,6 @@ max-width: 50%;
 }
 
 .hot-tours__content{
-  width:362px;
   padding: 15px 35px 15px 35px;
   background-color: #fff;
   border-bottom-right-radius: 5px;
@@ -176,9 +170,13 @@ max-width: 50%;
   color: #000;
 }
 
+.hot-tours__desc{
+  margin-top: 20px;
+}
+
 .hot-tours__desc-block{
   margin-right: 55px;
-  padding-top: 20px;
+
   display: inline-block;
 }
 
@@ -204,6 +202,9 @@ max-width: 50%;
   border-color: #F5170E;
 }
 
+.news{
+  margin-bottom: 200px;
+}
 
 .news__tittle{
   color: #fff;
@@ -213,6 +214,7 @@ max-width: 50%;
 }
 
 .news__card{
+  margin-top: 50px;
   position: relative;
   display: inline-block;
   width: 557px;
@@ -224,9 +226,7 @@ max-width: 50%;
   margin-right: 0px;
 }
 
-.news__img{
-  margin-top: 50px;
-}
+
 
 .news__content{
   bottom: 8px;
@@ -253,8 +253,9 @@ max-width: 50%;
 }
 
 .paginator{
+  margin-top: 40px;
   text-align: center;
-  margin-bottom: 200px;
+  
 }
 
 .paginator__item, .paginator__display, .paginator__list{
@@ -268,7 +269,7 @@ max-width: 50%;
   color: #fff;
   font-weight: 400;
   font-size: 16px;
-  margin-top: 40px;
+  
   margin-right: 35px;
 }
 
@@ -299,20 +300,19 @@ max-width: 50%;
   display: inline-block;
 }
 
-
+.about-sec__img{
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
 
 .about__content{
-  bottom: -40px;
-  left: -140px;
-  position: relative;
   width: 600px;
   display: inline-block;
 }
 
 .sub-about__title{
-  padding: 70px;
-  bottom: 150px;
-  position: absolute;
+  position: relative;
 }
 
 .about__title{
@@ -326,11 +326,6 @@ max-width: 50%;
   font-size: 16px;
 }
 
-.about__button{
-  left: 60px;
-  bottom: 120px;
-  position: absolute;
-}
 
 .footer{
   height: 92.64px;
