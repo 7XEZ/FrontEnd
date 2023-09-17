@@ -298,20 +298,27 @@ max-width: 50%;
 
 .about__img{
   display: inline-block;
+  vertical-align: top;
 }
 
 .about-sec__img{
   left: 0;
-  width: 100%;
+  top: 0;
   position: absolute;
+  height: 455px;
+  width: 785px;
 }
 
 .about__content{
-  width: 600px;
+  margin-top: 100px;
+  margin-left: -140px;
+  width: 654px;
   display: inline-block;
+  position: relative;
+  padding: 50px;
 }
 
-.sub-about__title{
+.about-sub__title{
   position: relative;
 }
 
@@ -324,6 +331,7 @@ max-width: 50%;
 .about__subtext{
   font-weight: 400;
   font-size: 16px;
+  padding-bottom: 60px;
 }
 
 
