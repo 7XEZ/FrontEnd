@@ -10,28 +10,33 @@
       <div class="wrapper">
         <div class="container">
         <header class="header">
-          <div class="logo">
-            <a href="#" class="logo__link">
-              <img src="./img/logo.png" alt="Иконка логотипа" class="logo__icon">
-            </a>
+          <div class="header__column">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img src="./img/logo.png" alt="Иконка логотипа" class="logo__icon">
+              </a>
+            </div>
+            <nav class="menu">          
+              <ul class="menu__list">
+                  <li class="menu__item"> 
+                    <a href="#" class="menu__link">Главная</a>
+                  </li>
+                  <li class="menu__item"> 
+                    <a href="./services.html" class="menu__link">Услуги</a>
+                  </li>
+                  <li class="menu__item"> 
+                    <a href="#" class="menu__link">Отзывы</a>
+                  </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="menu">          
-        <ul class="menu__list">
-          <li class="menu__item"> 
-            <a href="#" class="menu__link">Главная</a>
-          </li>
-          <li class="menu__item"> 
-            <a href="#" class="menu__link">Услуги</a>
-          </li>
-          <li class="menu__item"> 
-            <a href="#" class="menu__link">Отзывы</a>
-          </li>
-        </ul>
-          </nav>
-          <address class="contact">
-            <a href="tel:+88007003030" class="contact__phone">8 800 700 30 30</a>
-            <div class="contact__hour">График работы</div>
-          </address>
+          <div class="heder__column heder__column--alighn--right">
+            <address class="contact">
+              <a href="tel:+88007003030" class="contact__phone">8 800 700 30 30</a>
+              <div class="contact__hour">График работы</div>
+            </address>
+          </div>   
+
         </header>
 
         <main class="main">
@@ -47,7 +52,7 @@
           <section class="hot-tours">
             <div class="hot-tours__head">
               <h2 class="hot-tours__title">Горящие туры</h2>
-              <img src="./img/flame.png" alt="огонек" class="hot-tours__img">
+              <img src="./img/flame.png" alt="огонек" class="hot-tours-flame__img">
             </div>
             <ul class="hot-tours__list">
 
@@ -128,16 +133,16 @@
 
           <section class="news">
             <h2 class="news__tittle">Новости и акции</h2>
-            <ul class="news__cards">
-              <li class="news__card">
-                <img src="./img/plain.png" alt="фон для карточки" class="news__img">
+            <ul class="news__cards ">
+              <li class="news__card singal--cont">
+               <img src="./img/plain.png" alt="фон для карточки" class="news__img">
                 <div class="news__content">
                   <time class="news__date">декабрь 2019</time>
                   <h4 class="news__subtitel">Дешевые путевки на Новый Год!</h4>
                   <p class="news__info">Проведи новый год в Тайланде</p>
                 </div>
               </li>
-              <li class="news__card">
+              <li class="news__card singal--cont">
                 <img src="./img/Surfer.png" alt="фон для карточки" class="news__img">
                 <div class="news__content">
                   <time class="news__date">декабрь 2019</time>
@@ -195,52 +200,57 @@
         </main>
 
         <footer class="footer">
-          <div class="logo">
-            <a href="#" class="logo__link">
-              <img src="./img/logo.png" alt="Иконка логотипа" class="logo__icon">
-            </a>
+          <div class="footer__col">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img src="./img/logo.png" alt="Иконка логотипа" class="logo__icon">
+              </a>
+            </div>
+            <nav class="menu menu--footer">          
+              <ul class="menu__list">
+                <li class="menu__item"> 
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item"> 
+                  <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item"> 
+                  <a href="#" class="menu__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="menu menu--footer">          
-            <ul class="menu__list">
-              <li class="menu__item"> 
-                <a href="#" class="menu__link">Главная</a>
-              </li>
-              <li class="menu__item"> 
-                <a href="#" class="menu__link">Услуги</a>
-              </li>
-              <li class="menu__item"> 
-                <a href="#" class="menu__link">Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="socials">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img src="./img/vk.png" alt="иконка VK" class="socials__icon">
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img src="./img/telegram.png" alt="иконка TELEGRAM" class="socials__icon">
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img src="./img/f.png" alt="иконка FACEBOOK" class="socials__icon">
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img src="./img/in.png" alt="иконка INSTAGRAM" class="socials__icon">
-                </a>
-              </li>
-            </ul>
+        
+          <div class="footer__col footer__col--aligtn--itm--right">
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/vk.png" alt="иконка VK" class="socials__icon">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/telegram.png" alt="иконка TELEGRAM" class="socials__icon">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/f.png" alt="иконка FACEBOOK" class="socials__icon">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="./img/in.png" alt="иконка INSTAGRAM" class="socials__icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <address class="contact">
+              <div class="contact__call">Бесплатный звонок по России</div>
+              <a href="tel:+88007003030" class="contact__phone">8 800 700 30 30</a>
+            </address>
           </div>
-          <address class="contact">
-            <div class="contact__call">Бесплатный звонок по России</div>
-            <a href="tel:+88007003030" class="contact__phone">8 800 700 30 30</a>
-          </address>
         </footer>
       </div>
     </div>
