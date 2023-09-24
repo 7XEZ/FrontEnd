@@ -586,10 +586,10 @@ max-width: 50%;
 .footer__col{
   display: flex;
   align-items: center;
-
 }
 
 .footer__col--aligtn--itm--right{
-  display: flex;
-  align-items: flex-end;
+  justify-content:flex-end ;
+  align-items: center;
 }
+
