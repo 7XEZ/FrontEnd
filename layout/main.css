@@ -578,9 +578,10 @@ max-width: 50%;
   min-height: 132px;
 }
 
-.footer--services{
+.container--footer{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer__col{
