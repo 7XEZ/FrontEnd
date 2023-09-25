@@ -10,6 +10,9 @@ body{
 
 }
 
+
+
+
 .wrapper{
   background-image: url(./img/background.jpg);
   background-repeat: no-repeat; 
@@ -528,12 +531,15 @@ max-width: 50%;
   padding-top: 100px;
 }
 
+
+
 .paginator--services{
   margin-top: 0;
   padding-bottom: 60px;
 }
 
 .partners__title{
+  padding-top: 50px;
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 75px;
@@ -548,11 +554,18 @@ max-width: 50%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  align-items: center;
+  padding-bottom: 246px;
 }
 
 .partners__item{
   filter: grayscale(1);
   margin-left: 46px;
+}
+
+.partners__img--partner{
+  display: block;
+  width: 100%;
 }
 
 .partners__item:nth-child(4n+1){
