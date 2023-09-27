@@ -7,16 +7,13 @@
 body{
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 
-
-
 .wrapper{
-  background-image: url(./img/background.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover; 
+ background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container{
@@ -68,8 +65,8 @@ address{
   font-style: normal;
 }
 
-
 .contact{
+
   justify-content: end;
   font-weight: 400;
   right: 0;
@@ -80,10 +77,63 @@ address{
 }
 
 .contact__hour{
+  position: relative;
+  display: flex;
+  justify-content: end;
   color: #fff;
   font-size: 13px;
+  text-decoration: underline;
 }
 
+.dropdawn__menu{
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.contact__hour:hover .dropdawn__menu{
+  display: block;
+  opacity: 1;
+}
+
+
+.contact__dropdawn--triangl{
+  width: 10px;
+}
+
+.contact__dropdawn--triangle{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  bottom: 10px;
+  border: 10px solid transparent;
+  border-bottom-color:#EDEDED ;
+}
+
+.contact__dropdawn--triangle--text{
+  padding: 15px 15px;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  border-radius: 5px ;
+  background-color: #EDEDED;
+  width: 160px;
+  height: 80px;
+}
+
+.contact__dropdawn--triangle__sub--text{
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1E1F20;
+}
+
+.contact__dropdawn--triangle__sub--text--bold{
+  font-weight: 700;
+  font-style: 13px;
+  color: #1E1F20;
+}
 
 h1,h2,h3,h4, p{
   margin: 0;
@@ -545,17 +595,14 @@ max-width: 50%;
   margin-bottom: 75px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 150px;
 }
 
 .partners__list{
-  width: 1139px;
   height: 188px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   align-items: center;
-  padding-bottom: 246px;
+
 }
 
 .partners__item{
@@ -607,3 +654,9 @@ max-width: 50%;
   align-items: center;
 }
 
+
+/*Welcome page*/
+
+.wraper{
+  background-image: url(./img/bg.png);
+}
