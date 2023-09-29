@@ -11,7 +11,7 @@ body{
 
 
 .wrapper{
- background-image: url(./img/background.jpg);
+  background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,6 +46,14 @@ header{
   margin-right: 100px;
 }
 
+.menu__link{
+  color: #fff;
+  transition: .5s;
+}
+
+.menu__link:hover{
+  color: #F5170E;
+}
 
 .menu{
   font-size: 14px;
@@ -66,14 +74,24 @@ address{
 }
 
 .contact{
-
   justify-content: end;
   font-weight: 400;
   right: 0;
 }
 
 .contact__phone{
+  color: #fff;
   font-size: 26px;
+}
+
+.contact__hour{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: underline;
+  transition: .5s;
 }
 
 .contact__hour{
@@ -85,11 +103,19 @@ address{
   text-decoration: underline;
 }
 
+.contact__dropdawn{
+  color: #98A4A8;
+  transition: .5s;
+}
+
+.contact__dropdawn:hover{
+  color: #fff;
+}
+
 .dropdawn__menu{
   position: absolute;
   display: none;
-  opacity: 0;
-  transition: opacity .5s;
+
 }
 
 .contact__hour:hover .dropdawn__menu{
@@ -142,7 +168,6 @@ h1,h2,h3,h4, p{
 a{
   text-decoration: none;
   list-style: none;
-  color: #fff;
 }
 
 ul, li{
@@ -152,19 +177,25 @@ ul, li{
 }
 
 button{
-  border: 1px solid transparent;
-  padding: 18px 40px;
-  background-color: #fff;
-  border-radius: 35px;
-  color: #F5170E;
   font-weight: 700;
+  padding: 18px 40px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
-
 }
 
+.button{
+  background-color: #fff;
+  color: #F5170E;
+  border-radius: 35px;
+  border: 1px solid #F5170E;
+  transition: .5s;
+}
 
+.button:hover{
+  background-color: #F5170E;
+  color: #fff;
+}
 
 
 
@@ -186,10 +217,6 @@ max-width: 50%;
   margin-bottom: 30px;
 }
 
-.button{
-  background-color: #F5170E;
-  color: #fff;
-}
 
 .hot-tours{
   margin-top: 350px;
@@ -273,11 +300,6 @@ max-width: 50%;
   padding-bottom: 20px;
 }
 
-.button--border{
-  background-color: transparent;
-  color: #F5170E;
-  border-color: #F5170E;
-}
 
 .news{
   margin-bottom: 200px;
@@ -654,9 +676,3 @@ max-width: 50%;
   align-items: center;
 }
 
-
-/*Welcome page*/
-
-.wraper{
-  background-image: url(./img/bg.png);
-}

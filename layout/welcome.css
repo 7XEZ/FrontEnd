@@ -64,8 +64,10 @@ button{
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .5s;
 }
 
-@keyframes bounceIn{
-  
+.button:hover{
+  background: #DA0100;
 }
+
