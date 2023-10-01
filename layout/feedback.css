@@ -61,18 +61,14 @@ header{
   margin-right: 40px;
 }
 
+.menu__link--active{
+  color: #F5170E;
+}
+
 .menu__item:last-child{
   margin-right: 0;
 }
 
-.menu__link{
-  color: #fff;
-  transition: .5s;
-}
-
-.menu__link:hover{
-  color: #F5170E;
-}
 
 address{
   font-style: normal;
@@ -119,20 +115,26 @@ address{
 }
 
 
-.contact__dropdawn--triangl{
+.contact__dropdawn-triangl{
   width: 10px;
 }
 
-.contact__dropdawn--triangle{
+.dropdawn__menu::before{
+  content: "";
   position: absolute;
-  top: 10px;
-  right: 50px;
-  bottom: 10px;
-  border: 10px solid transparent;
-  border-bottom-color:#EDEDED ;
+  top: 20px;          
+  right: 30px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #EDEDED; 
 }
 
-.contact__dropdawn--triangle--text{
+
+
+.contact__dropdawn-triangle-text{
   padding: 15px 15px;
   position: absolute;
   top: 25px;
@@ -143,7 +145,7 @@ address{
   height: 40px;
 }
 
-.contact__dropdawn--triangle__sub--text{
+.contact__dropdawn-triangle__sub-text{
   display: flex;
   justify-content: center;
   padding-bottom: 5px;
@@ -152,7 +154,7 @@ address{
   color: #1E1F20;
 }
 
-.contact__dropdawn--triangle__sub--text--bold{
+.contact__dropdawn-triangle__sub-text--bold{
   font-weight: 700;
   font-style: 13px;
   color: #1E1F20;
@@ -216,7 +218,7 @@ address{
   text-decoration: underline;
 }
 
-.feedback__list{
+.feedback__main__list{
   column-count: 2;
   column-gap: 30px;
   margin-top: 80px;
@@ -234,7 +236,7 @@ address{
   margin-left: 25px;
 }
 
-.user__link{
+.feedback__link{
   color: #2E77A4;
   display: flex;
   align-items: center;
@@ -255,13 +257,13 @@ address{
   background: #f4f5f5;
 }
 
-.user__link::after{
+.feedback__link::after{
   content: url(./img/vk-blue.png);
   height: 29px;
 }
 
 
-.user__list{
+.feedback__list{
   display: flex;
   align-items: flex-start;
 }
@@ -372,6 +374,12 @@ address{
   padding-top: 80px;
 }
 
+.form__section__title{
+  font-weight: 700;
+  font-size: 48px;
+  color: #1A1B1E;
+}
+
 .form{
   margin-top: 50px;
 }
@@ -410,23 +418,23 @@ address{
 
 }
 
-.form__control--title{
+.form__control-title{
   width: 35%;
   padding-left: 30px;
 }
 
-.form__control--list{
+.form__control-list{
   flex: 1;
   display: flex;
   flex-wrap: wrap;
 }
 
-.form__control--item{
+.form__control-item{
   margin-bottom: 10px;
   margin-right: 10px;
 }
 
-.form_elements{
+.form__elements{
   cursor: pointer;
 }
 
@@ -442,6 +450,7 @@ address{
   margin-top: 30px;
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 
 
@@ -463,12 +472,12 @@ button{
   background-color: #2B2B2B;
 }
 
-.about__button--color--red{
+.form__button--color--red{
   background-color: #F5170E;
   transition: .5s;
 }
 
-.about__button--color--red:hover{
+.form__button--color--red:hover{
   background-color: #F5170E;
 }
 
@@ -506,8 +515,85 @@ button{
   left: 750px;
 }
 
+.socials__link--tg{
+  position: relative;
+}
+
+.socials__link--tg::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -178px -10px;
+}
+
+.socials__link--tg:hover::after{
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -122px -122px ;
+}
+
+.socials__link--vk{
+  position: relative;
+}
+
+.socials__link--vk::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -178px -66px;
+}
+
+.socials__link--vk:hover::after{
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -122px -10px ;
+}
+
+.socials__link--fb{
+  position: relative;
+}
+
+.socials__link--fb::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -178px -122px;
+}
+
+.socials__link--fb:hover::after{
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -122px -66px ;
+}
+
+.socials__link--in{
+  position: relative;
+}
+
+.socials__link--in::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -10px -122px;
+}
+
+.socials__link--in:hover::after{
+  width: 36px; height: 36px;
+  background: url('./img/css_sprites.png') -66px -122px ;
+}
+
 .socials__link{
   padding-right: 10px;
+  margin-right: 30px;
 }
 
 .socials__list{

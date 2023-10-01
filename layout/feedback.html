@@ -26,7 +26,7 @@
                       <a href="./services.html" class="menu__link">Услуги</a>
                     </li>
                     <li class="menu__item"> 
-                      <a href="./feedback.html" class="menu__link">Отзывы</a>
+                      <a href="./feedback.html" class="menu__link menu__link--active">Отзывы</a>
                     </li>
                 </ul>
               </nav>
@@ -37,11 +37,10 @@
                 <div class="contact__hour">
                   <a href="#" class="contact__dropdawn">График работы</a>
                   <div class="dropdawn__menu">                
-                    <div class="contact__dropdawn--triangl">
-                      <div class="contact__dropdawn--triangle"></div>
-                      <div class="contact__dropdawn--triangle--text">
-                        <p class="contact__dropdawn--triangle__sub--text contact__dropdawn--triangle__sub--text--bold">пн-вс: 09:00 - 20:00</p>
-                        <p class="contact__dropdawn--triangle__sub--text">Обед: 14:00-14:30</p>
+                    <div class="contact__dropdawn-triangl">
+                      <div class="contact__dropdawn-triangle-text">
+                        <p class="contact__dropdawn-triangle__sub-text contact__dropdawn-triangle__sub-text--bold">пн-вс: 09:00 - 20:00</p>
+                        <p class="contact__dropdawn-triangle__sub-text">Обед: 14:00-14:30</p>
                       </div>
                     </div>
                   </div>
@@ -64,9 +63,9 @@
         </section>
 
 
-        <main class="main__feedback">
+        <main class="feedback__main">
           <div class="container">
-            <ul class="feedback__list">
+            <ul class="feedback__main__list">
               <li class="feedback__item feedback">
                 <div class="feedback__head">
                   <div class="feedback__photo">
@@ -75,10 +74,10 @@
                     </div>
                   </div>
                   <div class="feedback__info">
-                    <a href="#" class="user__link">
+                    <a href="#" class="feedback__link">
                       Иван Петрович
                     </a>
-                    <ul class="user__list">
+                    <ul class="feedback__list">
                       <li class="user__item tag tag--color">
                         Водопад Янг-бей
                       </li>
@@ -101,10 +100,10 @@
                     </div>
                   </div>
                   <div class="feedback__info">
-                    <a href="#" class="user__link">
+                    <a href="#" class="feedback__link">
                       Лиза Сидорова
                     </a>
-                    <ul class="user__list">
+                    <ul class="feedback__list">
                       <li class="user__item tag tag--color">
                         Тур по Тайланду
                       </li>
@@ -127,10 +126,10 @@
                     </div>
                   </div>
                   <div class="feedback__info">
-                    <a href="#" class="user__link">
+                    <a href="#" class="feedback__link">
                       Екатерина Жмых
                     </a>
-                    <ul class="user__list">
+                    <ul class="feedback__list">
                       <li class="user__item tag tag--color">
                         Тур на Остров обезьян
                       </li>
@@ -153,10 +152,10 @@
                     </div>
                   </div>
                   <div class="feedback__info">
-                    <a href="#" class="user__link">
+                    <a href="#" class="feedback__link">
                       Антон Игоревич
                     </a>
-                    <ul class="user__list">
+                    <ul class="feedback__list">
                       <li class="user__item tag tag--color">
                         Тур по Индонезии
                       </li>
@@ -215,7 +214,7 @@
 
         <section class="form__section">
           <div class="container">
-            <h1 class="form__title">
+            <h1 class="form__section__title">
               Оставьте отзыв
             </h1>
             <form class="form">
@@ -227,48 +226,48 @@
                 <textarea name="q" id="" cols="30" rows="10" placeholder="Напишите свой честный отзыв ;)" class="form__input form__input--textarea"></textarea>
               </div>
               <div class="form__control">
-                <div class="form__control--title">
+                <div class="form__control-title">
                   Какими услугами компании пользуетесь?
                 </div>
-                <ul class="form__control--list">
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                <ul class="form__control-list">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Остров обезьян</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Тур по Тайланду</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Водопад Янг-бей</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Тур по Индонезии</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Никакими</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Тур по Бали</div>
                     </label>
                   </li>
-                  <li class="form__control--item">
-                    <label class="form_elements">
+                  <li class="form__control-item">
+                    <label class="form__elements">
                       <input type="checkbox" class="form__checkbox">
                       <div class="tag form__tag">Другое</div>
                     </label>
@@ -277,11 +276,11 @@
               </div>
             </form>
             <div class="form__button">
-              <div class="about__button ">
+              <div class="form__button ">
                 <button class="button">Очистить</button>
               </div>
-              <div class="about__button ">
-                <button class="button about__button--color--red">Отправить</button>
+              <div class="form__button ">
+                <button class="button form__button--color--red">Отправить</button>
               </div>
             </div>
 
@@ -315,23 +314,19 @@
               <div class="socials">
                 <ul class="socials__list">
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
-                      <img src="./img/vk.png" alt="иконка VK" class="socials__icon">
+                    <a href="#" class="socials__link socials__link--tg">
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
-                      <img src="./img/telegram.png" alt="иконка TELEGRAM" class="socials__icon">
+                    <a href="#" class="socials__link socials__link--vk">
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
-                      <img src="./img/f.png" alt="иконка FACEBOOK" class="socials__icon">
+                    <a href="#" class="socials__link socials__link--fb ">
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="#" class="socials__link">
-                      <img src="./img/in.png" alt="иконка INSTAGRAM" class="socials__icon">
+                    <a href="#" class="socials__link socials__link--in">
                     </a>
                   </li>
                 </ul>
