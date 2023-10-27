@@ -1,0 +1,44 @@
+.feedback{
+  margin-top: 30px;
+}
+
+.feedback__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.feedback__area{
+  display: flex;
+}
+
+.feedback__overwue{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8FAF9;
+  width: 940px;
+  height: 348px;
+}
+
+.feedback__text{
+  width: 498px;
+}
+
+.feedback__comment{
+  margin-left: 30px;
+}
+
+.feedback__profiles{
+  margin-top: 10px;
+  display: flex;
+}
+
+.feedback__avatar{
+  margin-right: 5px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}

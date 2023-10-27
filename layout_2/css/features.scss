@@ -1,0 +1,108 @@
+
+.features{
+
+  margin: 0 auto;
+
+  .features__title{
+    display: flex;
+    justify-content: center;
+    font-family: Play;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .features__subtitle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 590px;
+    margin-left: 420px;
+    margin-bottom: 70px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Play;
+    color:#666666 ;
+  }
+}
+
+.features__text{
+  display: flex;
+  justify-content: center;
+  width: 276px;
+}
+
+.features__image{
+  display: flex;
+  margin-bottom: 15px;
+  background: #F2F5F4;
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+}
+
+.features__image--wrapper{
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+.features__image--wrapper--sound{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+
+.features__text--title{
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feature__text--subtitle{
+
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.features__list{
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &::before{
+  content: url("../img/Combined\ shape\ 2204.png");
+  position: absolute;
+  left: 550px;
+  top: 930px;
+  }
+}
+
+.features__item--before::before{
+
+  content: url("../img/Combined\ shape\ 2204.png");
+  position: absolute;
+  left: 820px;
+  top: 930px;
+}
+
+.features__image--mb{
+  margin-bottom: 40px;
+}
+
+.features__desc::after{
+  position: absolute;
+  content: url("../img/Vector\ 2.png");
+  left: 230px;
+}
