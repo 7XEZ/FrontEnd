@@ -1,0 +1,99 @@
+.order{
+  height:100vh ;
+  background-image: url("../img/cta.png");
+  background-size: 100% 100%;
+}
+
+.order__title{
+  display: flex;
+  justify-content: center;
+
+}
+
+.order__form{
+  margin-top: 70px;
+}
+
+.order__title__text{
+  margin-top: 68px;
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form{
+  display: flex;
+}
+
+.form__col{
+  flex:1;
+  margin-right: 80px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.form__row{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form__block{
+  flex: 1;
+  margin-right: 80px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.form__input{
+  width: 100%;
+  border-radius: 3px;
+  border: solid 3px transparent;
+  padding: 18px 11px;
+
+  &:focus{
+    border-color: #E01F3D;
+    outline: none;
+  }
+}
+
+.form__input--textarea{
+  height: 152px;
+  width: 450px;
+  resize: none;
+}
+
+
+.form__title{
+  color: #fff;
+  font-size: 16px;
+  font-family: Play;
+  font-weight: 400;
+}
+
+.form__radio{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.form__controls{
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.form__buttons{
+  display: flex;
+}
+
+.button--transparent{
+  background: transparent;
+  text-transform: none;
+  font-weight: 400;
+  padding: 0;
+}

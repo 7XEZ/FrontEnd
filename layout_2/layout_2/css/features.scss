@@ -1,0 +1,104 @@
+.features__title__text{
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features__list{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.features__title__text {
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.features__overwue{
+  margin-top: 150px;
+}
+
+.features__title{
+  display: flex;
+  justify-content: center;
+}
+
+.features__subtitle__text{
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.features__subtitle{
+  position: relative;
+  left: 260px;
+  display: flex;
+  text-align: center;
+  width: 590px;
+}
+
+.features__img{
+  background: #F2F5F4;
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+
+
+}
+
+.features__item{
+  width: 276px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &::after{
+    content: url("../img/Combined\ shape\ 2204.png");
+    position: absolute;
+    top: 1050px;
+    left: 530px;
+  }
+
+  &::before{
+    content: url("../img/Combined\ shape\ 2204.png");
+    position: absolute;
+    top: 1050px;
+    left: 960px;
+  }
+
+}
+
+.features__icon{
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+.features__subdesc{
+  text-align: center;
+}
+
+.features__card__text{
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.features__card__subtext{
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.features__list::after{
+  position: absolute;
+  content: url("../img/Vector\ 2.png");
+  left: 170px;
+  top: 1400px;
+}
