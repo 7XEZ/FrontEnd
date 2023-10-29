@@ -1,11 +1,12 @@
 .features {
   height: 100vh;
+  position: relative;
 }
 .features::after {
   position: absolute;
   content: url("../img/Vector 2.png");
   left: 170px;
-  top: 1460px;
+  top: 720px;
 }
 
 .features__title__text {

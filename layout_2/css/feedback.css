@@ -1,5 +1,6 @@
 .feedback {
   height: 100vh;
+  position: relative;
 }
 .feedback::after {
   left: 730px;
