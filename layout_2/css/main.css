@@ -6,7 +6,12 @@
 @import url(./feedback.css);
 @import url(./order.css);
 @import url(./radio.css);
-@import url(./fixed_menu.css);
+@import url(./fexed_menu.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 li {
   list-style: none;
 }

@@ -8,6 +8,10 @@
   margin-bottom: 5px;
   position: relative;
 
+  &:last-child{
+    margin-bottom: 0;
+  }
+
   &--active{
     .fixed__link{
       border-color:#E01F3D;

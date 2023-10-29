@@ -1,3 +1,13 @@
+.features {
+  height: 100vh;
+}
+.features::after {
+  position: absolute;
+  content: url("../img/Vector 2.png");
+  left: 170px;
+  top: 1460px;
+}
+
 .features__title__text {
   font-family: Play;
   font-size: 48px;
@@ -53,6 +63,7 @@
 }
 
 .features__img {
+  position: relative;
   background: #F2F5F4;
   height: 128px;
   width: 128px;
@@ -60,6 +71,7 @@
 }
 
 .features__item {
+  position: relative;
   width: 276px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,23 +82,23 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.features__item::after {
-  content: url("../img/Combined shape 2204.png");
-  position: absolute;
-  top: 1050px;
-  left: 530px;
-}
 .features__item::before {
   content: url("../img/Combined shape 2204.png");
   position: absolute;
-  top: 1050px;
-  left: 960px;
+  top: 50px;
+  left: 320px;
+}
+.features__item:last-child::before {
+  content: "";
+  display: none;
 }
 
 .features__icon {
-  position: relative;
-  left: 30px;
-  top: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .features__subdesc {
@@ -104,11 +116,4 @@
   font-size: 16px;
   font-weight: 400;
   color: #666666;
-}
-
-.features__list::after {
-  position: absolute;
-  content: url("../img/Vector 2.png");
-  left: 170px;
-  top: 1400px;
 }

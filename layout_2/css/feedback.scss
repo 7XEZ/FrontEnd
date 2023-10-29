@@ -1,8 +1,18 @@
 .feedback{
-  margin-top: 230px;
+  height: 100vh;
+
+
+  &::after{
+    left:730px;
+    top: 1700px;
+    position: absolute;
+    content: url("../img/Ellipse 4.png");
+
+  }
 }
 
-.feedback__title{
+.feedback__title h1 {
+
   font-family: Play;
   font-size: 48px;
   font-weight: 700;
