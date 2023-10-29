@@ -6,19 +6,22 @@
 @import url(./feedback.css);
 @import url(./order.css);
 @import url(./radio.css);
-@import url(./fexed_menu.css);
+@import url(./fixed_menu.css);
 
 *{box-sizing: border-box;}
 
 li{
+  margin: 0;
   list-style: none;
 }
 
 a{
+  margin: 0;
   text-decoration: none;
 }
 
 ul{
+  margin: 0;
   padding-left: 0;
 }
 
