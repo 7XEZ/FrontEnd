@@ -1,8 +1,35 @@
 .feedback {
-  margin-top: 30px;
+  margin-top: 230px;
 }
 
-.feedback__container {
+.feedback__title {
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.feedback__title__text {
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feedback__text {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.feedback__subtitle {
+  font-family: Play;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container__feedback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +76,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__item {
+  margin-right: 5px;
+}
+.feedback__item:last-child {
+  margin-right: 0;
 }
 
 .feedback__avatar {
@@ -56,4 +99,16 @@
 }
 .feedback__avatar:last-child {
   margin-right: 0;
+}
+
+.feedback__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.element__second {
+  position: absolute;
+  top: 1640px;
+  left: 750px;
 }

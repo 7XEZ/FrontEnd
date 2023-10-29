@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
-@import url(./start.css);
-@import url(./features.css);
 @import url(./normalize.css);
+@import url(./main.css);
+@import url(./prev.css);
+@import url(./features.css);
 @import url(./feedback.css);
-
-*{
-  box-sizing: border-box;
-}
+@import url(./order.css);
+@import url(./radio.css);
+@import url(./fexed_menu.css);
 
 li{
   list-style: none;
@@ -16,30 +16,22 @@ a{
   text-decoration: none;
 }
 
+ul{
+  padding-left: 0;
+}
+
+h1{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
 body{
   margin: 0;
   position: relative;
 }
 
-
-  h1{
-    display: flex;
-    justify-content: center;
-    font-family: Play;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  h3{
-    font-family: Play;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  h4{
-    font-family: Play;
-    font-size: 18px;
-    font-weight: 700;
-  }
+$grey:#F5F5F5;
+$color:#292929;
