@@ -6,7 +6,7 @@
   position: absolute;
   content: url("../img/Vector 2.png");
   left: 170px;
-  top: 720px;
+  bottom: 0;
 }
 
 .features__title__text {
