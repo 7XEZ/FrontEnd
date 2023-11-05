@@ -1,25 +1,99 @@
-.features__title__text{
-  font-family: Play;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.features__list{
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
+$tablet:768px;
+$phone:480px;
+
+
+@mixin tablet{
+  @media screen and (max-width:$tablet){
+      @content;
+  }
 }
 
+@mixin phone{
+  @media screen and (max-width:$phone){
+      @content;
+  }
+}
+
+.features{
+  height: 100vh;
+  position: relative;
+
+
+
+  &::after{
+    
+    position: absolute;
+    content: url("../img/Vector\ 2.png");
+    left: 10.625rem;
+    bottom: 0;
+  }
+
+  @include phone(){
+    &::after{
+      bottom: -20rem;
+    }
+  }
+}
+
+.features__desc{
+  @include phone(){
+
+  }
+}
+
+.features__subdesc{
+  position: relative;
+  @include phone(){
+    left:10rem;
+    bottom: 10rem;
+  }
+}
+
+.features__title__text{
+  font-family: Play;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include phone(){
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+.features__list{
+  margin-top: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include phone(){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.features__desc{
+  @include phone(){
+    display: flex;
+  }
+}
 
 .features__title__text {
   font-family: Play;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .features__overwue{
-  margin-top: 150px;
+  margin-top: 9.375rem;
+
+  @include tablet(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 .features__title{
@@ -29,76 +103,99 @@
 
 .features__subtitle__text{
   font-family: Play;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #666666;
+
+
 }
 
 .features__subtitle{
   position: relative;
-  left: 260px;
+  left: 16.25rem;
   display: flex;
   text-align: center;
-  width: 590px;
+  width: 36.875rem;
+
+  @include tablet(){
+    left: 0;
+  }
+ 
 }
 
+
 .features__img{
+  position: relative;
   background: #F2F5F4;
-  height: 128px;
-  width: 128px;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
 
+  @include phone(){
+    display:flex;
+  }
 
 }
 
 .features__item{
-  width: 276px;
-  display: flex;
+  position: relative;
+  width: 17.25rem;
+
   flex-wrap: wrap;
   justify-content: center;
 
-  &::after{
-    content: url("../img/Combined\ shape\ 2204.png");
-    position: absolute;
-    top: 1050px;
-    left: 530px;
-  }
+
 
   &::before{
     content: url("../img/Combined\ shape\ 2204.png");
     position: absolute;
-    top: 1050px;
-    left: 960px;
+    top: 3.125rem;
+    left: 20rem;
   }
 
+
+  &:last-child::before{
+    content: "";
+    display: none;
+  }
+
+  @include phone(){
+    &::before{
+      display: none;
+    }
+
+
+
+  }
 }
 
+
+
+
 .features__icon{
-  position: relative;
-  left: 30px;
-  top: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .features__subdesc{
-  text-align: center;
+
+  justify-content: center;
 }
 
 .features__card__text{
   font-family: Play;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .features__card__subtext{
   font-family: Play;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #666666;
 }
 
-.features__list::after{
-  position: absolute;
-  content: url("../img/Vector\ 2.png");
-  left: 170px;
-  top: 1400px;
-}
+
+
