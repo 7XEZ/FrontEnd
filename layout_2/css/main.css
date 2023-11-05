@@ -7,6 +7,9 @@
 @import url(./order.css);
 @import url(./radio.css);
 @import url(./fixed_menu.css);
+@import url(./media.css);
+@import url(./burger.css);
+@import url(./footer.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -31,6 +34,10 @@ h1 {
   margin: 0;
 }
 
+h4 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -38,4 +45,20 @@ p {
 body {
   margin: 0;
   position: relative;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+    max-width: 768px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }

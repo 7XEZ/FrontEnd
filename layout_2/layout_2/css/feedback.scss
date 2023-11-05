@@ -1,72 +1,31 @@
-$tablet:768px;
-$phone:480px;
-
-
-@mixin tablet{
-  @media screen and (max-width:$tablet){
-      @content;
-  }
-}
-
-@mixin phone{
-  @media screen and (max-width:$phone){
-      @content;
-  }
-}
-
-
 .feedback{
-  margin-top: 20rem;
-  height: 100vh;
-  position: relative;
-
-  &::after{
-
-    left: 43.75rem;
-    bottom: 35.625rem;
-    position: absolute;
-    content: url("../img/Ellipse 4.png");
-
-  }
+  margin-top: 230px;
 }
 
-
-
-.feedback{
-  @include tablet(){
-    &::after{
-      content: "";
-    }
-  }
-}
-
-
-.feedback__title h1 {
-
+.feedback__title{
   font-family: Play;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 3.125rem;
+  margin-bottom: 50px;
 }
 
 .feedback__title__text{
   font-family: Play;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .feedback__text{
   font-family: Play;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   color: #666666;
-  width: 31.125rem;
 }
 
 .feedback__subtitle{
   font-family: Play;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -80,8 +39,6 @@ $phone:480px;
 
 .feedback__area{
   display: flex;
-
-
 }
 
 .feedback__overwue{
@@ -89,42 +46,20 @@ $phone:480px;
   align-items: center;
   justify-content: center;
   background-color: #F8FAF9;
-  width: 58.75rem;
-  height: 21.75rem;
-
-  @include tablet(){
-    display: flex;
-    flex-direction: column;
-    height: 30rem;
-  }
-}
-
-.feedback__img{
-  @include tablet(){
-    width: 8.125rem;
-    height: 8.125rem;
-    display: flex;
-    justify-content: center;
-  }
+  width: 940px;
+  height: 348px;
 }
 
 .feedback__text{
-  width: 31.125rem;
+  width: 498px;
 }
 
 .feedback__comment{
-  margin-left: 1.875rem;
-
-  @include tablet(){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  margin-left: 30px;
 }
 
 .feedback__profiles{
-  margin-top: 0.625rem;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -134,7 +69,7 @@ $phone:480px;
 }
 
 .feedback__item{
-  margin-top: 0.625rem;
+  margin-right: 5px;
 
   &:last-child{
     margin-right: 0;
@@ -142,7 +77,8 @@ $phone:480px;
 }
 
 .feedback__avatar{
-  margin-top: 0.625rem;
+  margin-right: 5px;
+
   &:last-child{
     margin-right: 0  
   }
@@ -157,6 +93,6 @@ $phone:480px;
 .element__second{
   position: absolute;
 
-  top: 102.5rem;
-  left: 46.875rem;
+  top: 1640px;
+  left: 750px;
 }

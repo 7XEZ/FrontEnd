@@ -1,38 +1,46 @@
 .feedback {
+  margin-top: 20rem;
   height: 100vh;
   position: relative;
 }
 .feedback::after {
-  left: 700px;
-  bottom: 570px;
+  left: 43.75rem;
+  bottom: 35.625rem;
   position: absolute;
   content: url("../img/Ellipse 4.png");
 }
 
+@media screen and (max-width: 768px) {
+  .feedback::after {
+    content: "";
+  }
+}
+
 .feedback__title h1 {
   font-family: Play;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .feedback__title__text {
   font-family: Play;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .feedback__text {
   font-family: Play;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #666666;
+  width: 31.125rem;
 }
 
 .feedback__subtitle {
   font-family: Play;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -66,20 +74,60 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F8FAF9;
-  width: 940px;
-  height: 348px;
+  width: 58.75rem;
+  height: 21.75rem;
+}
+@media screen and (max-width: 768px) {
+  .feedback__overwue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feedback__img {
+    width: 8.125rem;
+    height: 8.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .feedback__text {
-  width: 498px;
+  width: 31.125rem;
 }
 
 .feedback__comment {
-  margin-left: 30px;
+  margin-left: 1.875rem;
+}
+@media screen and (max-width: 768px) {
+  .feedback__comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 .feedback__profiles {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,14 +143,14 @@
 }
 
 .feedback__item {
-  margin-right: 5px;
+  margin-top: 0.625rem;
 }
 .feedback__item:last-child {
   margin-right: 0;
 }
 
 .feedback__avatar {
-  margin-right: 5px;
+  margin-top: 0.625rem;
 }
 .feedback__avatar:last-child {
   margin-right: 0;
@@ -116,6 +164,6 @@
 
 .element__second {
   position: absolute;
-  top: 1640px;
-  left: 750px;
+  top: 102.5rem;
+  left: 46.875rem;
 }
