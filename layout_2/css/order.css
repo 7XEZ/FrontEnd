@@ -3,6 +3,11 @@
   background-image: url("../img/cta.png");
   background-size: 100% 100%;
 }
+@media screen and (max-width: 480px) {
+  .order {
+    width: 100%;
+  }
+}
 
 .order__title {
   display: -webkit-box;

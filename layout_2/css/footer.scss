@@ -16,21 +16,29 @@ $phone:480px;
 
 
 
-.footer{
+.map{
     height: 100vh;
+    position: relative;
 
     @include tablet(){
         margin-top: 20rem;
     }
 }
 
-.footer__map{
+
+
+.map__content{
+    
 
     img{
+        
         width: 100%;
     }
 }
 
+.footer{
+    position: absolute;
+}
 
 .social__list{
     display: flex;

@@ -1,6 +1,5 @@
 
 .prev{
-
   background: url(../img/Ellipse\ 5.png) top 40% right 10% no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
@@ -21,6 +20,7 @@
 
 .container{
   width: 95%;
+  max-width: 1100px;
   margin: 0 auto;
 
 }
@@ -138,7 +138,7 @@ $phone:480px;
 .prev .prev__info{
   @include tablet(){
     margin-top: 1.35rem;
-    width: 47.825rem;
+    width: 100%;
   }
 
   @include phone(){

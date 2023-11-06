@@ -18,6 +18,7 @@
 
 .container {
   width: 95%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -104,7 +105,7 @@
 @media screen and (max-width: 768px) {
   .prev .prev__info {
     margin-top: 1.35rem;
-    width: 47.825rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {

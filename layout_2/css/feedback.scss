@@ -16,7 +16,7 @@ $phone:480px;
 
 
 .feedback{
-  margin-top: 20rem;
+
   height: 100vh;
   position: relative;
 
@@ -93,6 +93,7 @@ $phone:480px;
   height: 21.75rem;
 
   @include tablet(){
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 30rem;
@@ -110,6 +111,10 @@ $phone:480px;
 
 .feedback__text{
   width: 31.125rem;
+
+  @include tablet(){
+    width: 100%;
+  }
 }
 
 .feedback__comment{
@@ -120,6 +125,7 @@ $phone:480px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-left: 0;
   }
 }
 

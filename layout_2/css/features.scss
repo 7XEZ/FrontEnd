@@ -43,10 +43,7 @@ $phone:480px;
 
 .features__subdesc{
   position: relative;
-  @include phone(){
-    left:10rem;
-    bottom: 10rem;
-  }
+
 }
 
 .features__title__text{
@@ -130,6 +127,7 @@ $phone:480px;
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
+  flex-shrink: 0;
 
   @include phone(){
     display:flex;
@@ -139,12 +137,9 @@ $phone:480px;
 
 .features__item{
   position: relative;
-  width: 17.25rem;
-
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-
 
   &::before{
     content: url("../img/Combined\ shape\ 2204.png");
@@ -160,12 +155,19 @@ $phone:480px;
   }
 
   @include phone(){
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
     &::before{
       display: none;
     }
+  }
 
-
-
+  @include tablet(){
+    &::before{
+      display: none;
+    }
   }
 }
 
@@ -180,7 +182,8 @@ $phone:480px;
 }
 
 .features__subdesc{
-
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -197,5 +200,8 @@ $phone:480px;
   color: #666666;
 }
 
-
+.features__card__subtitle{
+  display: flex;
+  text-align: center;
+}
 

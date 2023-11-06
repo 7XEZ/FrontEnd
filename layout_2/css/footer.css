@@ -1,14 +1,19 @@
-.footer {
+.map {
   height: 100vh;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
-  .footer {
+  .map {
     margin-top: 20rem;
   }
 }
 
-.footer__map img {
+.map__content img {
   width: 100%;
+}
+
+.footer {
+  position: absolute;
 }
 
 .social__list {
