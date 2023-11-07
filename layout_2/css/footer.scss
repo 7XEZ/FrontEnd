@@ -21,34 +21,53 @@ $phone:480px;
     position: relative;
 
     @include tablet(){
-        margin-top: 20rem;
     }
 }
 
 
 
 .map__content{
-    
+    height: 100%;
+    display: block;
+
 
     img{
-        
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
+
 }
 
 .footer{
     position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: #fff;
+    width: 100%; 
 }
+
+
 
 .social__list{
     display: flex;
     justify-content: flex-end;
+
+    @include phone(){
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .col__adress{
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 4rem;
+
+    @include phone(){
+        margin-left: 0;
+    }
 }
 
 .col__title{
@@ -67,7 +86,11 @@ $phone:480px;
     &:hover{
         fill: black;
     }
+
 }
+
+
+.social__item
 
 .col__social {
     display: flex;
@@ -75,6 +98,8 @@ $phone:480px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 4rem;
+
+
   }
 
   .social__item{
@@ -83,6 +108,7 @@ $phone:480px;
     &:last-child{
         margin-right: 0;
     }
+
   }
 
   
@@ -91,4 +117,10 @@ $phone:480px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include phone(){
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+    }
 }

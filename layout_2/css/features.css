@@ -168,6 +168,7 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%;
+    margin-bottom: 5rem;
   }
   .features__item::before {
     display: none;
