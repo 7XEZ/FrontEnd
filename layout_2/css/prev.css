@@ -2,24 +2,12 @@
   background: url(../img/Ellipse\ 5.png) top 40% right 10% no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 40.625rem;
-  position: relative;
-}
-.prev::after {
-  bottom: 0;
-  right: 6.25rem;
-  width: 2.895rem;
-  position: absolute;
-  content: "";
-  height: 0.64875rem;
-  rotate: -45deg;
-  background-color: #C4C4C4;
+  min-height: 650px;
 }
 
 .container {
-  width: 95%;
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 1100px;
+  margin-left: 220px;
 }
 
 .header {
@@ -34,99 +22,6 @@
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact .contact__header {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact .contact__header .contact__header__drop {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container .container {
-    max-width: 450px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container__header {
-    max-width: 320px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .prev__short {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .prev {
-    background: none;
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .prev__info {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .prev__info::before {
-    content: url(../img/Ellipse6.png);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .prev .prev__info {
-    margin-top: 1.35rem;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .prev .prev__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 27.825rem;
-  }
-}
-
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +29,7 @@
 }
 
 .menu__item {
-  margin-right: 0.9375rem;
+  margin-right: 15px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -143,13 +38,13 @@
 .menu__link {
   color: #292929;
   font-family: Alegreya Sans;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .contact__tel {
   font-family: Play;
   color: #292929;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 .contact__tel::before {
   content: url("../img/Group 1.png");
@@ -157,39 +52,39 @@
 }
 
 .prev__info {
-  width: 23.125rem;
-  margin-top: 6.25rem;
+  width: 370px;
+  margin-top: 100px;
 }
 
 .prev__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .prev__title__text {
   text-transform: uppercase;
   font-family: Play;
   color: #292929;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .prev__subtitle__text {
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .prev__subtitle__text {
   font-family: Play;
   color: #292929;
-  font-size: 1.3125rem;
+  font-size: 21px;
   font-weight: 400;
 }
 
 .button {
-  height: 3.375rem;
-  width: 10.1875rem;
+  height: 54px;
+  width: 163px;
   font-family: Play;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 16px;
   border: none;
   border-radius: 100px;
   text-transform: uppercase;
@@ -198,7 +93,7 @@
 }
 
 .prev__short {
-  margin-top: 5rem;
+  margin-top: 80px;
 }
 
 .prev__list {
@@ -214,19 +109,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 10.375rem;
+  width: 166px;
 }
 
 .prev__item__text {
   font-family: Play;
   color: #292929;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
 .element {
   position: absolute;
-  left: 79.375rem;
-  top: 43.125rem;
+  left: 1270px;
+  top: 690px;
+}
+
+.element__figure {
+  width: 46.32px;
+  height: 10.38px;
+  rotate: -45deg;
+  background-color: #C4C4C4;
 }

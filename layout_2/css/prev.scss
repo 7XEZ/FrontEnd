@@ -1,27 +1,15 @@
-
 .prev{
   background: url(../img/Ellipse\ 5.png) top 40% right 10% no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 40.625rem;
-  position: relative;
+  min-height: 650px;
 
-  &::after{
-    bottom: 0;
-    right: 6.25rem; 
-    width: 2.895rem;
-    position: absolute;
-    content: "";
-    height: 0.64875rem;
-    rotate: -45deg;
-    background-color: #C4C4C4;
-  }
+
 }
 
 .container{
-  width: 95%;
-  max-width: 1100px;
-  margin: 0 auto;
+width: 1100px;
+margin-left: 220px;
 
 }
 
@@ -29,11 +17,11 @@ $grey:#F5F5F5;
 $color:#292929;
 
 @mixin button {
-  height: 3.375rem;
-  width: 10.1875rem;
+  height: 54px;
+  width: 163px;
   font-family: Play;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 16px;
   border: none;
   border-radius: 100px;
   text-transform: uppercase;
@@ -48,116 +36,12 @@ $color:#292929;
 
 }
 
-$tablet:768px;
-$phone:480px;
-
-@mixin tablet{
-  @media screen and (max-width:$tablet){
-      @content;
-  }
-}
-
-@mixin phone{
-  @media screen and (max-width:$phone){
-      @content;
-  }
-}
-
-.menu{
-  @include tablet{
-    display: none;
-  }
-
-
-}
-
-.contact .contact__header{
-  @include tablet(){
-    display: none;
-  }
-
-
-}
-
-.contact .contact__header .contact__header__drop{
-    @include phone(){
-    display: none;
-  }
-  
-}
-
-.container{
-  @include tablet(){
-    .container{
-      max-width: 450px;
-    }
-  }
-
-
-}
-
-.container__header{
-  @include phone(){
-    max-width: 320px;
-  }
-}
-
-
-.prev__short{
-  @include tablet(){
-    display: none;
-  }
-}
-
-.prev{
-  @include tablet(){
-    background: none;
-    height: 100vh;
-  }
-}
-
-.prev__info{
-  @include tablet(){
-
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-
-    &::before{
-      content: url(../img/Ellipse6.png);
-    }
-  }
-
-
-}
-
-.prev .prev__info{
-  @include tablet(){
-    margin-top: 1.35rem;
-    width: 100%;
-  }
-
-  @include phone(){
-    display: flex;
-    flex: 1;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 27.825rem;
-  }
-}
-
-
 .menu__list{
   display: flex;
 }
 
 .menu__item{
-  margin-right: 0.9375rem;
+  margin-right: 15px;
 
   &:last-child{
     margin-right: 0;
@@ -167,13 +51,13 @@ $phone:480px;
 .menu__link{
   color: $color;
   font-family: Alegreya Sans;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .contact__tel{
   font-family: Play;
   color: $color;
-  font-size: 1.125rem;
+  font-size: 18px;
 
 
   &::before{
@@ -184,30 +68,30 @@ $phone:480px;
 
 
 .prev__info{
-  width: 23.125rem;
-  margin-top: 6.25rem;
+  width: 370px;
+  margin-top: 100px;
 }
 
 .prev__title{
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .prev__title__text{
   text-transform: uppercase;
   font-family: Play;
   color: $color;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .prev__subtitle__text{
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .prev__subtitle__text{
   font-family: Play;
   color: $color;
-  font-size: 1.3125rem;
+  font-size: 21px;
   font-weight: 400;
 }
 
@@ -216,7 +100,7 @@ $phone:480px;
 }
 
 .prev__short{
-  margin-top: 5rem;
+margin-top: 80px;
 
 }
 
@@ -227,21 +111,29 @@ $phone:480px;
 .prev__item{
   display: flex;
   align-items: center;
-  width: 10.375rem;
+  width: 166px;
 }
 
 .prev__item__text{
   font-family: Play;
   color: $color;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
 .element{
   position: absolute;
-  left: 79.375rem;
-  top: 43.125rem;
+  left: 1270px;
+  top: 690px;
 }
+
+.element__figure{
+  width: 46.32px;
+  height: 10.38px;
+  rotate: -45deg;
+  background-color: #C4C4C4;
+}
+
 
 

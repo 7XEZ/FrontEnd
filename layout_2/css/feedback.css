@@ -1,45 +1,31 @@
 .feedback {
-  height: 100vh;
-  position: relative;
-}
-.feedback::after {
-  left: 43.75rem;
-  bottom: 35.625rem;
-  position: absolute;
-  content: url("../img/Ellipse 4.png");
+  margin-top: 230px;
 }
 
-@media screen and (max-width: 768px) {
-  .feedback::after {
-    content: "";
-  }
-}
-
-.feedback__title h1 {
+.feedback__title {
   font-family: Play;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 3.125rem;
+  margin-bottom: 50px;
 }
 
 .feedback__title__text {
   font-family: Play;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .feedback__text {
   font-family: Play;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   color: #666666;
-  width: 31.125rem;
 }
 
 .feedback__subtitle {
   font-family: Play;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -73,67 +59,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F8FAF9;
-  width: 58.75rem;
-  height: 21.75rem;
-}
-@media screen and (max-width: 768px) {
-  .feedback__overwue {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 30rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .feedback__img {
-    width: 8.125rem;
-    height: 8.125rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  width: 940px;
+  height: 348px;
 }
 
 .feedback__text {
-  width: 31.125rem;
-}
-@media screen and (max-width: 768px) {
-  .feedback__text {
-    width: 100%;
-  }
+  width: 498px;
 }
 
 .feedback__comment {
-  margin-left: 1.875rem;
-}
-@media screen and (max-width: 768px) {
-  .feedback__comment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    margin-left: 0;
-  }
+  margin-left: 30px;
 }
 
 .feedback__profiles {
-  margin-top: 0.625rem;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,14 +88,14 @@
 }
 
 .feedback__item {
-  margin-top: 0.625rem;
+  margin-right: 5px;
 }
 .feedback__item:last-child {
   margin-right: 0;
 }
 
 .feedback__avatar {
-  margin-top: 0.625rem;
+  margin-right: 5px;
 }
 .feedback__avatar:last-child {
   margin-right: 0;
@@ -170,6 +109,6 @@
 
 .element__second {
   position: absolute;
-  top: 102.5rem;
-  left: 46.875rem;
+  top: 1640px;
+  left: 750px;
 }

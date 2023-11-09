@@ -6,27 +6,17 @@
 @import url(./feedback.css);
 @import url(./order.css);
 @import url(./radio.css);
-@import url(./fixed_menu.css);
-@import url(./media.css);
-@import url(./burger.css);
-@import url(./footer.css);
-
-
-*{box-sizing: border-box;}
-
+@import url(./fexed_menu.css);
 
 li{
-  margin: 0;
   list-style: none;
 }
 
 a{
-  margin: 0;
   text-decoration: none;
 }
 
 ul{
-  margin: 0;
   padding-left: 0;
 }
 
@@ -34,10 +24,6 @@ h1{
   margin: 0;
 }
 
-
-h4{
-  margin: 0;
-}
 p{
   margin: 0;
 }
@@ -49,35 +35,3 @@ body{
 
 $grey:#F5F5F5;
 $color:#292929;
-
-$tablet:768px;
-$phone:480px;
-
-
-@mixin tablet{
-  @media screen and (max-width:$tablet){
-      @content;
-  }
-}
-
-@mixin phone{
-  @media screen and (max-width:$phone){
-      @content;
-  }
-}
-
-
-
-html{
-  font-size: 16px;
-
-  @include tablet{
-    font-size: 15px;
-    max-width: 768px;
-    overflow-x: hidden;
-  }
-  
-  @include phone{
-    font-size: 14px;
-  }
-}
