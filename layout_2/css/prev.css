@@ -2,12 +2,35 @@
   background: url(../img/Ellipse\ 5.png) top 40% right 10% no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
+  position: relative;
+}
+.prev::after {
+  bottom: 0;
+  right: 6.25rem;
+  width: 2.895rem;
+  position: absolute;
+  content: "";
+  height: 0.64875rem;
+  rotate: -45deg;
+  background-color: #C4C4C4;
+}
+@media screen and (max-width: 768px) {
+  .prev {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev--bg {
+    background-color: #F5F5F5;
+  }
 }
 
 .container {
-  width: 1100px;
-  margin-left: 220px;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  width: 97%;
 }
 
 .header {
@@ -22,6 +45,26 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__tel--header {
+    display: none;
+  }
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +72,7 @@
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -38,13 +81,13 @@
 .menu__link {
   color: #292929;
   font-family: Alegreya Sans;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .contact__tel {
   font-family: Play;
   color: #292929;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .contact__tel::before {
   content: url("../img/Group 1.png");
@@ -52,48 +95,95 @@
 }
 
 .prev__info {
-  width: 370px;
-  margin-top: 100px;
+  width: 23.125rem;
+  margin-top: 6.25rem;
+}
+@media screen and (max-width: 768px) {
+  .prev__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 43rem 6.7%;
+    width: 100%;
+    background: url(../img/Ellipse6.png) left 50% top 10% no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .prev__info {
+    background: url(../img/Ellipse6.png) left 50% top no-repeat;
+    padding: 49rem 10rem;
+  }
 }
 
 .prev__title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .prev__title__text {
   text-transform: uppercase;
   font-family: Play;
   color: #292929;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .prev__title__text {
+    font-size: 4rem;
+  }
+}
 
-.prev__subtitle__text {
-  margin-bottom: 40px;
+@media screen and (max-width: 768px) {
+  .prev__subtitle {
+    padding: 0 17.5%;
+  }
 }
 
 .prev__subtitle__text {
+  margin-bottom: 2.5rem;
   font-family: Play;
   color: #292929;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .prev__subtitle__text {
+    font-size: 2.0125rem;
+  }
 }
 
 .button {
-  height: 54px;
-  width: 163px;
+  height: 3.375rem;
+  width: 10.1875rem;
   font-family: Play;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   border-radius: 100px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #E01F3D;
 }
+@media screen and (max-width: 480px) {
+  .button {
+    width: 14rem;
+    height: 6rem;
+    font-size: 1.7rem;
+  }
+}
 
 .prev__short {
-  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .prev__short {
+    display: none;
+  }
 }
 
 .prev__list {
@@ -109,26 +199,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 166px;
+  width: 10.375rem;
 }
 
 .prev__item__text {
   font-family: Play;
   color: #292929;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .element {
   position: absolute;
-  left: 1270px;
-  top: 690px;
-}
-
-.element__figure {
-  width: 46.32px;
-  height: 10.38px;
-  rotate: -45deg;
-  background-color: #C4C4C4;
+  left: 79.375rem;
+  top: 43.125rem;
 }

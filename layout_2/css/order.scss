@@ -1,60 +1,110 @@
+$tablet:768px;
+$phone:480px;
+
+
+@mixin tablet{
+  @media screen and (max-width:$tablet){
+      @content;
+  }
+}
+
+@mixin phone{
+  @media screen and (max-width:$phone){
+      @content;
+  }
+}
+
+
+
 .order{
   height:100vh ;
   background-image: url("../img/cta.png");
   background-size: 100% 100%;
+
+  @include tablet(){
+    padding: 15% 0;
+  }
 }
+
 
 .order__title{
   display: flex;
   justify-content: center;
-
 }
 
-.order__form{
-  margin-top: 70px;
-}
+
 
 .order__title__text{
-  margin-top: 68px;
+  margin-top: 4.25rem;
   font-family: Play;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+
+  @include tablet(){
+    font-size: 5rem;
+  }
+
+  @include phone(){
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
 }
+
+
 
 .form{
   display: flex;
+  @include tablet(){
+    display: flex;
+    flex-direction: column;
+    padding: 0 19%;
+  }
+
+  @include phone(){
+    padding: 0;
+  }
 }
 
 .form__col{
   flex:1;
-  margin-right: 80px;
+  margin-right: 1.25rem;
 
   &:last-child{
     margin-right: 0;
   }
+
 }
 
 .form__row{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
 .form__block{
   flex: 1;
-  margin-right: 80px;
+  margin-bottom: 1.25rem;
+  margin-right: 1rem;
 
   &:last-child{
     margin-right: 0;
   }
+
+
 }
 
 .form__input{
   width: 100%;
-  border-radius: 3px;
-  border: solid 3px transparent;
-  padding: 18px 11px;
+  border-radius: 0.1875rem;
+  border: solid 0.1875rem transparent;
+  padding: 1.125rem 0.6875rem;
+
 
   &:focus{
     border-color: #E01F3D;
@@ -63,32 +113,57 @@
 }
 
 .form__input--textarea{
-  height: 152px;
-  width: 450px;
+  height: 9.5rem;
   resize: none;
 }
 
 
 .form__title{
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Play;
   font-weight: 400;
+
+  @include phone(){
+    font-size: 2rem;
+  }
 }
 
 .form__radio{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+
+  @include  phone(){
+    display: flex;
+    justify-content: center;
+  }
 }
+
 
 .form__controls{
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+
+  @include  phone(){
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 .form__buttons{
   display: flex;
+
+  @include tablet(){
+    display: flex;
+    justify-content: center;
+  }
+
+  @include phone(){
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .button--transparent{

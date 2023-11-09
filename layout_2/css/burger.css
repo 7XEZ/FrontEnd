@@ -12,9 +12,10 @@
 }
 @media screen and (max-width: 768px) {
   .burger {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 2rem;
   }
 }
 
@@ -36,7 +37,7 @@
   height: 4.33px;
   position: absolute;
   background-color: #000;
-  top: 0;
+  top: -0.325rem;
   left: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
