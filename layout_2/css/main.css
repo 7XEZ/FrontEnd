@@ -10,9 +10,15 @@
 @import url(./media.css);
 @import url(./burger.css);
 @import url(./footer.css);
+@import url(./slider.css);
+@import url(./overlay.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 li {
@@ -31,6 +37,10 @@ ul {
 }
 
 h1 {
+  margin: 0;
+}
+
+h3 {
   margin: 0;
 }
 
