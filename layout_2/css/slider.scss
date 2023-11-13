@@ -15,16 +15,9 @@ $phone:480px;
 }
 
 .slider{
-    background: url(../img/Ellipse7png.png) top 50% left 10% no-repeat;
     height: 100vh;
     background-color: #F8FAF9;
     position: relative;
-
-    @include tablet(){
-
-        background: url(../img/Ellipse6.png)top 20% left 50% no-repeat;
-        background-color: #F8FAF9;
-    }
 }
 
 .slider__arrows{
@@ -78,13 +71,26 @@ $phone:480px;
     }
 }
 
+.slider__img{
+    @include tablet(){
+        position: absolute;
+        left: 33%;
+        width: 37%;
+    }
+
+    @include phone(){
+        left: 21%;
+        width: 60%;
+    }
+}
+
 
 
 .slider__content__desc{
-    margin-left: 40%;
+    margin-left: 5%;
 
     @include tablet(){
-        padding-top: 50%;
+        padding-top: 45%;
         margin-left: 0;
         display: flex;
         flex-direction: column;
@@ -108,8 +114,8 @@ $phone:480px;
 .slider__gear:hover .slider__gear__feature{
     display: block;
     position: absolute;
-    top: 15%;
-    left: 49%;
+    top: 16.8%;
+    left: 53.5%;
 }
 
 

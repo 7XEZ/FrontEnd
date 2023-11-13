@@ -63,17 +63,26 @@
 }
 
 .social__icon {
-  border: 1px solid black;
   fill: #B3B3B3;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 3rem;
+  height: 3rem;
 }
 .social__icon:hover {
   fill: black;
 }
 @media screen and (max-width: 768px) {
+  .social__icon {
+    height: 4.1rem;
+    width: 4rem;
+  }
   .social__icon:hover {
     fill: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social__icon {
+    height: 6rem;
+    width: 6rem;
   }
 }
 

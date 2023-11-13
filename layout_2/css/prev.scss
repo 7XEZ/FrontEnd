@@ -77,14 +77,11 @@ $color:#292929;
   justify-content: space-between;
 }
 
-.logo{
-  @include tablet(){
-    width: 1.5625rem;
-    height: 1.5625rem;
-    margin-top: 0.5rem;
-
-  }
+.social__icon{
+  width: 4rem;
 }
+
+
 
 .menu{
   @include tablet(){
@@ -140,10 +137,10 @@ $color:#292929;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 43rem 6.7%;
+    padding: 32rem 6.7%;
     width: 100%;
     
-    background: url(../img/Ellipse6.png) left 50% top 10% no-repeat ;
+    background: url(../img/Ellipse6.png) left 50% top 0 no-repeat ;
 
   }
 

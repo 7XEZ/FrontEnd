@@ -1,14 +1,7 @@
 .slider {
-  background: url(../img/Ellipse7png.png) top 50% left 10% no-repeat;
   height: 100vh;
   background-color: #F8FAF9;
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  .slider {
-    background: url(../img/Ellipse6.png) top 20% left 50% no-repeat;
-    background-color: #F8FAF9;
-  }
 }
 
 .slider__arrows {
@@ -72,12 +65,26 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .slider__img {
+    position: absolute;
+    left: 33%;
+    width: 37%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__img {
+    left: 21%;
+    width: 60%;
+  }
+}
+
 .slider__content__desc {
-  margin-left: 40%;
+  margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
   .slider__content__desc {
-    padding-top: 50%;
+    padding-top: 45%;
     margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,8 +119,8 @@
 .slider__gear:hover .slider__gear__feature {
   display: block;
   position: absolute;
-  top: 15%;
-  left: 49%;
+  top: 16.8%;
+  left: 53.5%;
 }
 
 .slider__gear__feature {

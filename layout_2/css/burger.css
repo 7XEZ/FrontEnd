@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .burger {
   position: fixed;
   top: 1.25rem;
@@ -21,21 +20,18 @@
 }
 
 .burger--active .burger__line:nth-child(1) {
-  /* Трансформация верхней линии бургера при активации */
-  -webkit-transform: rotate(55deg) translate(7px, 5px);
-          transform: rotate(55deg) translate(7px, 5px);
+  -webkit-transform: rotate(45deg) translate(7px, 5px);
+          transform: rotate(45deg) translate(7px, 5px);
   background-color: #FFFFFF;
 }
 
 .burger--active .burger__line:nth-child(2) {
-  /* Средняя линия бургера исчезает при активации */
   opacity: 0;
 }
 
 .burger--active .burger__line:nth-child(3) {
-  /* Трансформация нижней линии бургера при активации */
-  -webkit-transform: rotate(-55deg) translate(7px, -6px);
-          transform: rotate(-55deg) translate(7px, -6px);
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
   background-color: #FFFFFF;
 }
 

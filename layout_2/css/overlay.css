@@ -22,7 +22,7 @@
   z-index: 10;
 }
 
-.menu__item__overlay {
+.menu__item-overlay {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,11 +35,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.menu__item__overlay:last-child {
+.menu__item-overlay:last-child {
   margin-bottom: 0;
 }
 
-.menu__link__overlay {
+.menu__link-overlay {
   color: #fff;
   font-size: 2.25rem;
   font-weight: 400;
