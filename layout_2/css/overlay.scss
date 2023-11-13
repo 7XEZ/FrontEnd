@@ -1,7 +1,7 @@
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgba(51, 53, 55,);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -15,61 +15,35 @@
     height: 100%;
     z-index: 10;
   }
-
-  .menu{
-    &__item{
-      margin-bottom:20px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      
-      &:after{
-        content:'';
-        display: inline-block;
-        height: 5px;
-        width: 5px;
-        background-color: #fff;
-        border-radius:50%;
-        margin-top:10px;
-      }
-      
-      &:last-child{
-        margin-bottom:0;
-        
-        &:after{
-          display:none;
-        }
-      }
-    }
-    
-    &__link{
-      &:hover{
-        opacity:.7;
-      }
-    }
-  }
   
-  .burger--active{
-    color: #fff;
-    .burger__line{
-      &:nth-child(1){
-        opacity:0;
-      }
+
+  .menu__item__overlay{
+    margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    &:last-child{
+      margin-bottom:0;
       
-      &:nth-child(2){
-        transform:rotate(45deg);
-      }
-      
-      &:nth-child(3){
-        transform:rotate(-45deg) translateY(-8px) translateX(5px);
-      }
     }
+
   }
+
+  .menu__link__overlay{
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: Play;
+  }
+
   
   .overlay--active{
     left: 0;
     opacity:1;
   }
+
+  
   
   .body--active-menu{
     overflow:hidden;

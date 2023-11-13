@@ -32,22 +32,22 @@ $phone:480px;
     }
 }
 
-.burger--active{
-    .burger__line{
-        
-        &:nth-child(1){
-            opacity: 0;
-        }
-    
-        &:nth-child(2){
-            transform: rotate(45deg);
-        }
-        &:nth-child(3){
-            transform: rotate(-45deg);
-        }
-    }
-
-}
+.burger--active .burger__line:nth-child(1) {
+    /* Трансформация верхней линии бургера при активации */
+    transform: rotate(55deg) translate(7px, 5px);
+    background-color: #FFFFFF;
+  }
+  
+  .burger--active .burger__line:nth-child(2) {
+    /* Средняя линия бургера исчезает при активации */
+    opacity: 0;
+  }
+  
+  .burger--active .burger__line:nth-child(3) {
+    /* Трансформация нижней линии бургера при активации */
+    transform: rotate(-55deg) translate(7px, -6px);
+    background-color: #FFFFFF;
+  }
 
 .burger__line{
     border-radius: 10px;
@@ -62,10 +62,13 @@ $phone:480px;
     &:nth-child(2){
         top: 50%;
         transform: translateY(-50%);
+        transition: transform 0.5s ease-in-out;
+        
     }
 
     &:nth-child(3){
         top: 100%;
         transform: translateY(-50%);
+        transition: transform 0.5s ease-in-out;
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .burger {
   position: fixed;
   top: 1.25rem;
@@ -20,15 +21,22 @@
 }
 
 .burger--active .burger__line:nth-child(1) {
+  /* Трансформация верхней линии бургера при активации */
+  -webkit-transform: rotate(55deg) translate(7px, 5px);
+          transform: rotate(55deg) translate(7px, 5px);
+  background-color: #FFFFFF;
+}
+
+.burger--active .burger__line:nth-child(2) {
+  /* Средняя линия бургера исчезает при активации */
   opacity: 0;
 }
-.burger--active .burger__line:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
+
 .burger--active .burger__line:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  /* Трансформация нижней линии бургера при активации */
+  -webkit-transform: rotate(-55deg) translate(7px, -6px);
+          transform: rotate(-55deg) translate(7px, -6px);
+  background-color: #FFFFFF;
 }
 
 .burger__line {
@@ -46,9 +54,17 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 .burger__line:nth-child(3) {
   top: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
