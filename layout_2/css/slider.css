@@ -21,14 +21,14 @@
 .arrow__left {
   cursor: pointer;
   position: absolute;
-  left: 0;
+  left: -5rem;
   border: none;
   background-color: transparent;
 }
 .arrow__right {
   cursor: pointer;
   position: absolute;
-  right: 0;
+  right: 30rem;
   border: none;
   background-color: transparent;
 }
@@ -79,11 +79,11 @@
   }
 }
 
-.slider__content__desc {
+.slider__content-desc {
   margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
-  .slider__content__desc {
+  .slider__content-desc {
     padding-top: 45%;
     margin-left: 0;
     display: -webkit-box;
@@ -102,7 +102,7 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .slider__content__desc {
+  .slider__content-desc {
     padding-top: 78%;
   }
 }
@@ -116,14 +116,14 @@
   }
 }
 
-.slider__gear:hover .slider__gear__feature {
+.slider__gear:hover .slider__gear-feature {
   display: block;
   position: absolute;
   top: 16.8%;
   left: 53.5%;
 }
 
-.slider__gear__feature {
+.slider__gear-feature {
   position: absolute;
   left: 50%;
   top: 16.9%;
@@ -134,7 +134,7 @@
   display: none;
 }
 
-.slider__gear__item {
+.slider__gear-item {
   padding-right: 0.8125rem;
   padding-left: 0.875rem;
   padding-top: 1.125rem;
@@ -149,18 +149,18 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.slider__gear__item:last-child {
+.slider__gear-item:last-child {
   margin-bottom: 0;
 }
 
-.slider__gear__text {
+.slider__gear-text {
   color: #000;
   font-family: Play;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.slider__gear__number__text {
+.slider__gear-number__text {
   color: #000;
   font-family: Play;
   font-size: 1rem;
@@ -176,12 +176,12 @@
   background-color: #9A9A9A;
 }
 
-.slider__gear__img {
+.slider__gear-img {
   position: absolute;
   top: 25%;
   left: 27%;
 }
-.slider__gear__img:hover .slider__gear__feature {
+.slider__gear-img:hover .slider__gear-feature {
   display: block;
 }
 
@@ -195,7 +195,7 @@
   }
 }
 
-.slider__title__text {
+.slider__title-text {
   font-family: Play;
   text-transform: uppercase;
   color: #292929;
@@ -213,14 +213,14 @@
   }
 }
 
-.slider__subtitle__text {
+.slider__subtitle-text {
   font-family: Play;
   color: #292929;
   font-weight: 400;
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__subtitle__text {
+  .slider__subtitle-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -229,14 +229,14 @@
   }
 }
 
-.slider__feature__desc {
+.slider__feature-desc {
   margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .slider__feature__desc {
+  .slider__feature-desc {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -256,83 +256,83 @@
   margin-right: 2.625rem;
 }
 
-.slider__charge__title {
+.slider__charge-title {
   font-family: Play;
   font-weight: 400;
   color: #666;
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__charge__title {
+  .slider__charge-title {
     font-size: 2rem;
   }
 }
 
-.slider__charge__number {
+.slider__charge-number {
   color: #000;
   font-family: Play;
   font-weight: 700;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__charge__number {
+  .slider__charge-number {
     font-size: 2rem;
   }
 }
 
-.slider__charge__hour__text {
+.slider__charge-hour-text {
   color: #000;
   font-family: Play;
   font-weight: 700;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__charge__hour__text {
+  .slider__charge-hour-text {
     font-size: 2rem;
   }
 }
 
-.slider__weight__title {
+.slider__weight-title {
   font-family: Play;
   font-weight: 400;
   color: #666;
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__weight__title {
+  .slider__weight-title {
     font-size: 2rem;
   }
 }
 
-.slider__weight__number {
+.slider__weight-number {
   color: #000;
   font-family: Play;
   font-weight: 700;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__weight__number {
+  .slider__weight-number {
     font-size: 2rem;
   }
 }
 
-.slider__weight__hour__text {
+.slider__weight-hour-text {
   color: #000;
   font-family: Play;
   font-weight: 700;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__weight__hour__text {
+  .slider__weight-hour-text {
     font-size: 2rem;
   }
 }
 
-.slider__charge__hour {
+.slider__charge-hour {
   margin-right: 0.5rem;
 }
 
-.slider__weight__hour {
+.slider__weight-hour {
   margin-right: 0.5rem;
 }
 
@@ -350,33 +350,33 @@
   }
 }
 
-.slider__price__block {
+.slider__price-block {
   margin-right: 0.8125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.slider__price__rate {
+.slider__price-rate {
   color: #000;
   font-family: Play;
   font-weight: 400;
   font-size: 2.25rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__price__rate {
+  .slider__price-rate {
     font-size: 4.5rem;
   }
 }
 
-.slider__price__currency__text {
+.slider__price-currency-text {
   color: #000;
   font-family: Play;
   font-weight: 400;
   font-size: 2.25rem;
 }
 @media screen and (max-width: 768px) {
-  .slider__price__currency__text {
+  .slider__price-currency-text {
     font-size: 4.5rem;
     margin-right: 5rem;
   }

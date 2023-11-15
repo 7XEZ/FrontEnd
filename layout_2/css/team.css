@@ -1,0 +1,120 @@
+.team {
+  height: 100vh;
+}
+
+.team__title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__title-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: Play;
+  color: #292929;
+}
+
+.team__profile-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__profile-item {
+  height: 28.375rem;
+  width: 13.875rem;
+  margin-right: 1.25rem;
+}
+.team__profile-item:last-child {
+  margin-right: 0;
+}
+
+.team__profile-img {
+  margin-bottom: 1rem;
+}
+
+.team__profile-str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.6875rem;
+}
+
+.team__profile-name {
+  margin-right: 0.25rem;
+}
+
+.team__profile-nametx {
+  color: #000;
+  font-family: Play;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.team__profile-elem {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.team__profile-elem-img {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.team__profile-subdesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+}
+
+.team__profile-subdesc-title {
+  margin-bottom: 0.25rem;
+}
+
+.team__profile-subdesc-title-txt {
+  color: #000;
+  font-family: Play;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.team__profile-subdesc-subtext {
+  color: #666;
+  font-family: Play;
+  font-size: 1rem;
+  font-weight: 400;
+}
