@@ -1,21 +1,17 @@
 $(document).ready(function(){
-    console.log('DOM построен');
-});
+    $('.team__profile-desc').on('click', function(){
 
-$(document).ready(function(){
-    $('.team__profile-elem').on('click', e =>{
+        var clickedElem = $(this);
 
-        var subdesc = $('.team__profile-subdesc');
-
-        subdesc.height("3.75rem")
-
-        $('.team__profile-subdesc').toggle();
-
-        $('.team__profile-elem').css({
-            'transform': 'rotate(60deg)',
-            'transition': 'transform 0.5s' // Опционально, для плавного поворота
-        });
-    });
-
+        $('.team__profile-elem-img').on('click', function(){
+            function SlideMenu(){
+                
+                clickedElem.find('.team__profile-elem-img').addClass('team__profile-elem-img--active');
+                clickedElem.find('.team__profile-subdesc').addClass('team__profile-subdesc--active');
+            }
     
+            SlideMenu();
+        });
+
+    });
 });

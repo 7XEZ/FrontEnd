@@ -84,6 +84,11 @@
           transform: rotate(0);
 }
 
+.team__profile-elem-img--active {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
 .team__profile-subdesc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +104,10 @@
   text-align: center;
   height: 0;
   overflow: hidden;
+}
+
+.team__profile-subdesc--active {
+  height: 3.75rem;
 }
 
 .team__profile-subdesc-title {

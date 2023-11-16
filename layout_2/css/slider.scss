@@ -20,11 +20,18 @@ $phone:480px;
     position: relative;
 }
 
+.slider .container{
+    position:relative
+}
+
 .slider__arrows{
     width: 100%;
     position: absolute;
     top: 50%;
-    bottom: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     @include tablet(){
         left: 10%;
@@ -35,8 +42,6 @@ $phone:480px;
 
 .arrow__left{
     cursor: pointer;
-    position: absolute;
-    left: -5rem;
     border: none;
     background-color: transparent;
 
@@ -47,8 +52,6 @@ $phone:480px;
 
 .arrow__right{
     cursor: pointer;
-    position: absolute;
-    right: 30rem;
     border: none;
     background-color: transparent;
 }
@@ -84,7 +87,9 @@ $phone:480px;
     }
 }
 
-
+.slider__content{
+    margin-left: 7%;
+}
 
 .slider__content-desc{
     margin-left: 5%;
@@ -105,6 +110,8 @@ $phone:480px;
 
 .slider__gear{
     margin-bottom: 1.5625rem;
+    display: inline-block;
+    position: relative;
 
     @include tablet(){
         display: none;
@@ -113,16 +120,13 @@ $phone:480px;
 
 .slider__gear:hover .slider__gear-feature{
     display: block;
-    position: absolute;
-    top: 16.8%;
-    left: 53.5%;
 }
 
 
 .slider__gear-feature{
     position: absolute;
-    left: 50%;
-    top: 16.9%;
+    left: 100%;
+    top: 0%;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.90);
     width: 17.0625rem;
