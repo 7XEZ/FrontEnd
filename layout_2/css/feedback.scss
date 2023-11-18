@@ -21,13 +21,18 @@ $phone:480px;
   position: relative;
 
 
-
   @include tablet{
     padding: 3% 0;
   }
 }
 
+.feedback__wrap{
+  display: none;
+}
 
+.feedback__wrap--active{
+  display: block;
+}
 
 
 .feedback__img{
@@ -186,14 +191,15 @@ $phone:480px;
 
 .feedback__item{
   margin-top: 0.625rem;
+  margin-right: 1.5rem;
 
   &:last-child{
     margin-right: 0;
   }
+
 }
 
 .feedback__avatar{
-  margin-top: 0.625rem;
   &:last-child{
     margin-right: 0  
   }
@@ -202,7 +208,18 @@ $phone:480px;
 .feedback__button{
   background-color: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.feedback__image{
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+
+  width: 5rem;
+  height: 5rem;
 }
 
 .element__second{
@@ -210,4 +227,12 @@ $phone:480px;
 
   top: 102.5rem;
   left: 46.875rem;
+}
+
+.feedback__item--active{
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 3px;
+  border: 7px solid transparent;
+  box-shadow:0 0 5px #E01F3D;
 }
