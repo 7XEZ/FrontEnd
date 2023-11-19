@@ -154,6 +154,7 @@
 }
 
 .button {
+  cursor: pointer;
   height: 3.375rem;
   width: 10.1875rem;
   font-family: Play;

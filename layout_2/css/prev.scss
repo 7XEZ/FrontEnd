@@ -59,6 +59,7 @@ $grey:#F5F5F5;
 $color:#292929;
 
 @mixin button {
+  cursor: pointer;
   height: 3.375rem;
   width: 10.1875rem;
   font-family: Play;
