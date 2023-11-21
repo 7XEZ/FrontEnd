@@ -51,10 +51,8 @@
 }
 @media screen and (max-width: 768px) {
   .team__profile-item {
-    margin-right: 0;
-    margin-top: 2rem;
-    height: 20rem;
-    width: 40rem;
+    height: 0rem;
+    width: 0rem;
   }
 }
 
@@ -74,7 +72,6 @@
           align-items: center;
   margin-bottom: 0.6875rem;
 }
-
 .team__profile-name {
   margin-right: 0.25rem;
 }
@@ -84,6 +81,11 @@
   font-family: Play;
   font-size: 1.125rem;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .team__profile-nametx {
+    font-size: 1.5rem;
+  }
 }
 
 .team__profile-elem {
@@ -123,6 +125,13 @@
   height: 3.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .team__profile-list-mobile .team__profile-subdesc--active {
+    overflow: visible;
+    height: 3.75rem;
+  }
+}
+
 .team__profile-subdesc-title {
   margin-bottom: 0.25rem;
 }
@@ -149,10 +158,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
