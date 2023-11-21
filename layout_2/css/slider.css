@@ -111,6 +111,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .slider__item {
+    margin-top: 5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slider__img {
     width: 70%;
@@ -157,12 +163,6 @@
             align-items: center;
   }
 }
-@media screen and (max-width: 480px) {
-  .slider__content-desc {
-    padding-top: 78%;
-  }
-}
-
 .slider__gear {
   margin-bottom: 1.5625rem;
   display: inline-block;
@@ -178,6 +178,12 @@
   .slider__item {
     margin-top: 0;
     margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__item {
+    margin-top: 5%;
+    margin-bottom: 0;
   }
 }
 

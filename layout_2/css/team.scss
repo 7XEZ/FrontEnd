@@ -55,8 +55,8 @@ $phone:480px;
     @include tablet(){
         margin-right: 0;
         margin-top: 2rem;
-        height: 0;
-        width: 0;
+        height: 20rem;
+        width: 40rem;
     }
 }
 
@@ -112,9 +112,6 @@ $phone:480px;
 .team__profile-subdesc--active{
     height: 3.75rem;
 
-    @include tablet(){
-        height: 100rem;
-    }
 }
 
 

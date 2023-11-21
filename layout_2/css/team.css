@@ -53,8 +53,8 @@
   .team__profile-item {
     margin-right: 0;
     margin-top: 2rem;
-    height: 0;
-    width: 0;
+    height: 20rem;
+    width: 40rem;
   }
 }
 
@@ -121,11 +121,6 @@
 
 .team__profile-subdesc--active {
   height: 3.75rem;
-}
-@media screen and (max-width: 768px) {
-  .team__profile-subdesc--active {
-    height: 100rem;
-  }
 }
 
 .team__profile-subdesc-title {

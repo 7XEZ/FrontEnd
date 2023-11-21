@@ -107,9 +107,16 @@ $phone:480px;
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+
 }
 
 
+.slider__item{
+    @include phone(){
+        margin-top: 5%;
+    }
+}
 
 .slider__img{
     @include tablet(){
@@ -149,7 +156,7 @@ $phone:480px;
     }
 
     @include phone(){
-        padding-top: 78%;
+       
     }
 }
 
@@ -168,6 +175,10 @@ $phone:480px;
     @include tablet(){
         margin-top: 0;
         margin-bottom: 2%;
+    }
+    @include phone(){
+        margin-top: 5%;
+        margin-bottom: 0;
     }
 }
 
