@@ -1,3 +1,18 @@
+$tablet:768px;
+$phone:480px;
+
+
+@mixin tablet{
+  @media screen and (max-width:$tablet){
+      @content;
+  }
+}
+
+@mixin phone{
+  @media screen and (max-width:$phone){
+      @content;
+  }
+}
 .team{
     height: 100vh;
 }
@@ -22,6 +37,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet(){
+        display: none;
+    }
 }
 
 .team__profile-item{
@@ -105,3 +124,14 @@
     font-weight: 400;
 
 }
+
+
+
+.team__profile-list-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+

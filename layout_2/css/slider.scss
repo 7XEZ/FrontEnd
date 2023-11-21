@@ -91,6 +91,10 @@ $phone:480px;
 .slider__list{
     align-items: center;
     display: flex;
+
+    @include tablet(){
+        height: 70rem;
+    }
 }
 
 .slider__item{
@@ -109,9 +113,8 @@ $phone:480px;
 
 .slider__img{
     @include tablet(){
-        position: absolute;
-        left: 33%;
-        width: 37%;
+        width:70%;
+
     }
 
     @include phone(){
@@ -120,12 +123,24 @@ $phone:480px;
     }
 }
 
+.slick-slide img{
+    @include tablet(){
+        width: 70%;
+        margin-left: 16%;
+    }
+}
+
+.slider__img-block{
+    @include tablet(){
+        margin-bottom: 2.5rem;
+    }
+}
+
 
 .slider__content-desc{
     margin-left: 5%;
 
     @include tablet(){
-        padding-top: 45%;
         margin-left: 0;
         display: flex;
         flex-direction: column;
@@ -138,6 +153,7 @@ $phone:480px;
     }
 }
 
+
 .slider__gear{
     margin-bottom: 1.5625rem;
     display: inline-block;
@@ -145,6 +161,13 @@ $phone:480px;
 
     @include tablet(){
         display: none;
+    }
+}
+
+.slider__item{
+    @include tablet(){
+        margin-top: 0;
+        margin-bottom: 2%;
     }
 }
 
@@ -386,10 +409,4 @@ $phone:480px;
     }
 }
 
-.slider__img-block{
-@include tablet(){
-position: absolute;
-left: 0;
-top: 0;
-}
-}
+
