@@ -49,13 +49,13 @@ $phone:480px;
     margin-right: 1.25rem;
 
     &:last-child{
-        margin-right: 0;
+        margin-right: 0rem;
     }
 
     @include tablet(){
-        height: 0rem;
-        width: 0rem;
+        margin-right: 0;
     }
+
 }
 
 .team__profile-img{
@@ -75,6 +75,7 @@ $phone:480px;
 .team__profile-name{
     margin-right: 0.25rem;
     
+    
 
 }
 
@@ -85,7 +86,7 @@ $phone:480px;
     font-weight: 700;
 
     @include tablet(){
-        font-size: 1.5rem;
+        font-weight: 700;
     }
 }
 
@@ -113,6 +114,11 @@ $phone:480px;
     text-align: center;
     height: 0;
     overflow: hidden;
+
+    @include tablet(){
+        height: 0rem;
+
+    }
 }
 
 .team__profile-subdesc--active{
@@ -123,7 +129,7 @@ $phone:480px;
 .team__profile-list-mobile .team__profile-subdesc--active{
     @include tablet(){
         overflow: visible;
-        height: 3.75rem;
+        height: auto;
     }
 }
 
@@ -137,6 +143,10 @@ $phone:480px;
     font-family: Play;
     font-size: 1rem;
     font-weight: 400;
+
+    @include tablet(){
+        font-weight: 700;
+    }
 }
 
 .team__profile-subdesc-subtext{
@@ -153,11 +163,18 @@ $phone:480px;
 .team__profile-list-mobile{
     @include tablet(){
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
         display: none;
+
 }
 
+.team__profile-item-mobile{
+    @include tablet(){
+        height: 3rem;
 
+    }
+}
 
