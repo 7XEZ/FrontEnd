@@ -51,6 +51,7 @@
 }
 @media screen and (max-width: 768px) {
   .team__profile-item {
+    height: 0;
     margin-right: 0;
   }
 }
@@ -122,6 +123,7 @@
 @media screen and (max-width: 768px) {
   .team__profile-subdesc {
     height: 0rem;
+    overflow: hidden;
   }
 }
 
@@ -132,7 +134,7 @@
 @media screen and (max-width: 768px) {
   .team__profile-list-mobile .team__profile-subdesc--active {
     overflow: visible;
-    height: auto;
+    height: 3.75rem;
   }
 }
 
@@ -177,11 +179,5 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .team__profile-item-mobile {
-    height: 3rem;
   }
 }

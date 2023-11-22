@@ -53,6 +53,7 @@ $phone:480px;
     }
 
     @include tablet(){
+        height: 0;
         margin-right: 0;
     }
 
@@ -74,8 +75,6 @@ $phone:480px;
 
 .team__profile-name{
     margin-right: 0.25rem;
-    
-    
 
 }
 
@@ -117,19 +116,18 @@ $phone:480px;
 
     @include tablet(){
         height: 0rem;
-
+        overflow: hidden;
     }
 }
 
 .team__profile-subdesc--active{
     height: 3.75rem;
-
 }
 
 .team__profile-list-mobile .team__profile-subdesc--active{
     @include tablet(){
         overflow: visible;
-        height: auto;
+        height: 3.75rem;
     }
 }
 
@@ -169,12 +167,5 @@ $phone:480px;
     }
         display: none;
 
-}
-
-.team__profile-item-mobile{
-    @include tablet(){
-        height: 3rem;
-
-    }
 }
 
