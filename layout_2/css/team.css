@@ -41,8 +41,11 @@
   }
 }
 
-.team__profile-item {
+.team__profile-list .team__profile-item {
   height: 28.375rem;
+}
+
+.team__profile-item {
   width: 13.875rem;
   margin-right: 1.25rem;
 }
@@ -51,7 +54,6 @@
 }
 @media screen and (max-width: 768px) {
   .team__profile-item {
-    height: 0;
     margin-right: 0;
   }
 }
@@ -72,6 +74,7 @@
           align-items: center;
   margin-bottom: 0.6875rem;
 }
+
 .team__profile-name {
   margin-right: 0.25rem;
 }
@@ -85,6 +88,11 @@
 @media screen and (max-width: 768px) {
   .team__profile-nametx {
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__profile-nametx {
+    font-size: 1.2rem;
   }
 }
 
@@ -120,8 +128,9 @@
   height: 0;
   overflow: hidden;
 }
+
 @media screen and (max-width: 768px) {
-  .team__profile-subdesc {
+  .team__profile-list-mobile .team__profile-subdesc {
     height: 0rem;
     overflow: hidden;
   }
@@ -134,7 +143,7 @@
 @media screen and (max-width: 768px) {
   .team__profile-list-mobile .team__profile-subdesc--active {
     overflow: visible;
-    height: 3.75rem;
+    height: auto;
   }
 }
 
@@ -153,12 +162,22 @@
     font-weight: 700;
   }
 }
+@media screen and (max-width: 480px) {
+  .team__profile-subdesc-title-txt {
+    font-size: 1.5rem;
+  }
+}
 
 .team__profile-subdesc-subtext {
   color: #666;
   font-family: Play;
   font-size: 1rem;
   font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+  .team__profile-subdesc-subtext {
+    font-size: 1.5rem;
+  }
 }
 
 .team__profile-list-mobile {
