@@ -10,8 +10,18 @@
 
 .slider .slick-arrow {
   font-size: 0;
-  width: 6rem;
-  height: 2rem;
+  width: 11rem;
+  height: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .slider .slick-arrow {
+    height: 37rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider .slick-arrow {
+    height: 15rem;
+  }
 }
 
 .slider .container {

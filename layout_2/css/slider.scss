@@ -26,9 +26,17 @@ $phone:480px;
 
 .slider .slick-arrow{
     font-size: 0;
-    width: 6rem;
-    height: 2rem;
+    width:11rem;
+    height: 6rem;
 
+    @include tablet(){
+        height: 37rem;
+    }
+
+
+    @include phone(){
+        height: 15rem;
+    }
 }
 
 

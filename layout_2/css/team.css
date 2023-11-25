@@ -28,6 +28,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -87,6 +89,7 @@
 }
 @media screen and (max-width: 768px) {
   .team__profile-nametx {
+    font-size: 1.31375rem;
     font-weight: 700;
   }
 }
@@ -173,6 +176,11 @@
   font-family: Play;
   font-size: 1rem;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .team__profile-subdesc-subtext {
+    font-size: 1.456875rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .team__profile-subdesc-subtext {
