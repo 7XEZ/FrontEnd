@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .order {
   height: 100vh;
   background-image: url("../img/cta.png");
@@ -191,4 +192,9 @@
 
 .error {
   color: #E01F3D;
+}
+
+.error-highlight {
+  border: 2px solid red;
+  /* Другие стили для подсветки ошибок */
 }
