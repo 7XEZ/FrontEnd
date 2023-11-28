@@ -20,13 +20,7 @@ $phone:480px;
 
 
 
-  &::after{
-    
-    position: absolute;
-    content: url("../img/Vector\ 2.png");
-    left: 10.625rem;
-    bottom: 0;
-  }
+
 
   @include phone(){
     &::after{
@@ -47,6 +41,10 @@ $phone:480px;
   text-transform: uppercase;
 
 
+}
+
+.features__title{
+  padding-top: 3rem;
 }
 
 .features__title .features__title__text{

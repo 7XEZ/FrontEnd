@@ -1,0 +1,21 @@
+.video {
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.video__title {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video__title-tx {
+  font-family: Play;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

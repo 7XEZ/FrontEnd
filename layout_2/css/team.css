@@ -3,6 +3,7 @@
 }
 
 .team__title {
+  padding-top: 3rem;
   margin-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;

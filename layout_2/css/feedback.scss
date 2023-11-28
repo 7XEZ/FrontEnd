@@ -17,8 +17,16 @@ $phone:480px;
 
 .feedback{
 
+
   height: 100vh;
   position: relative;
+
+  &::after{
+    position: absolute;
+    content: url("../img/Ellipse_circ.png");
+    left: 3.875rem;
+    bottom: -1.2rem;
+}
 
   @include tablet{
 
@@ -40,6 +48,9 @@ $phone:480px;
   }
 }
 
+.feedback__title{
+  padding-top: 3rem;
+}
 
 .feedback__title h1 {
 

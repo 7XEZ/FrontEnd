@@ -2,12 +2,6 @@
   height: 100vh;
   position: relative;
 }
-.features::after {
-  position: absolute;
-  content: url("../img/Vector 2.png");
-  left: 10.625rem;
-  bottom: 0;
-}
 @media screen and (max-width: 480px) {
   .features::after {
     left: 6rem;
@@ -24,6 +18,10 @@
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.features__title {
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {

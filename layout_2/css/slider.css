@@ -3,6 +3,18 @@
   background-color: #F8FAF9;
   position: relative;
 }
+.slider::before {
+  position: absolute;
+  content: url("../img/Vector 2.png");
+  left: 3.875rem;
+  top: -1.2rem;
+}
+.slider::after {
+  position: absolute;
+  content: url("../img/Rectangle_square.png");
+  right: 1.5rem;
+  bottom: -1.2rem;
+}
 
 .slider .slider__item .slick-slide .slick-current .slick-active {
   width: 57.5rem;
