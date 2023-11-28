@@ -97,6 +97,7 @@ $phone:480px;
     }
 
     @include phone(){
+        font-weight: 700;
         font-size: 1.2rem;
     }
 }
@@ -197,3 +198,8 @@ $phone:480px;
 
 }
 
+.container-mobile{
+    @include phone(){
+        padding: 10% 0;
+    }
+}

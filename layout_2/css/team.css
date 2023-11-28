@@ -95,6 +95,7 @@
 }
 @media screen and (max-width: 480px) {
   .team__profile-nametx {
+    font-weight: 700;
     font-size: 1.2rem;
   }
 }
@@ -206,5 +207,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-mobile {
+    padding: 10% 0;
   }
 }
