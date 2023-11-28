@@ -5,12 +5,25 @@ section.first().addClass('active');
 
 const performTransition = sectionEQ => {
     const position = sectionEQ * -100;
+
+        const currentSec = section.eq(sectionEQ);
+        const MenuTheme = currentSec.attr("data-sidemenu-theme");
+        const sidemenu = $(".fixed__menu");
+
+        if(MenuTheme == "black"){
+            sidemenu.addClass("fixed__menu--white")
+        }else{
+            sidemenu.removeClass("fixed__menu--white") 
+        }
+
     
     display.css({
         transform: `translateY(${position}vh)` // исправлено на обратные кавычки
     });
 
     section.eq(sectionEQ).addClass('active').siblings().removeClass('active');
+
+    sidemenu.find("fixed__item").eq(sectionEQ).addClass("active").siblings().removeClass("active");
 }
 
 const scrollViewport = direction => {
@@ -35,4 +48,44 @@ $(window).on("wheel", e => {
     } else if (deltaY < 0) {
         scrollViewport("prev");
     }
+});
+
+
+$(window).on("keydown", e =>{
+    const TagName = e.target.TagName.toLowerCase();
+
+    if(TagName != "input" && TagName != "textarea"){
+
+        switch(e.keyCode){
+            case 38:
+                scrollViewport("prev");
+                break
+        }
+        switch(e.keyCode){
+            case 40:
+                scrollViewport("next");
+                break
+        }
+    }
+
+
+});
+
+$("[data-scroll-to]").click(e =>{
+    e.preventDefault();
+
+    const $this = $(e.currentTarget);
+    const target = $this.attr("data-scroll-to");
+    const reqSection = $(`[data-section-id=${target}]`);
+
+    performTransition(reqSection.index());
+
+});
+
+
+$("body").swipe({
+    swipe: function(event, direction){
+        if (direction == "up") scrollViewport("next");
+        if (direction == "down") scrollViewport("prev");
+    },
 });
