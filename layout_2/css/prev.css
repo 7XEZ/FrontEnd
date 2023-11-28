@@ -2,7 +2,6 @@
   background: url(../img/Ellipse\ 5.png) top 40% right 10% no-repeat;
   background-color: #F5F5F5;
   height: 100vh;
-  min-height: 40.625rem;
   position: relative;
 }
 .prev::after {
