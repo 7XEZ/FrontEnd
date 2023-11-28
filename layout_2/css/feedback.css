@@ -2,12 +2,6 @@
   height: 100vh;
   position: relative;
 }
-@media screen and (max-width: 768px) {
-  .feedback {
-    padding: 23% 0;
-  }
-}
-
 .feedback__wrap {
   display: none;
 }

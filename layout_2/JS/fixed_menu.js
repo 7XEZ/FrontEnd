@@ -4,10 +4,10 @@ const display = $('.maincontent');
 section.first().addClass('active');
 
 const performTransition = sectionEQ => {
-    const position = sectionEQ * -110;
+    const position = sectionEQ * -100;
     
     display.css({
-        transform: `translateY(${position}%)` // исправлено на обратные кавычки
+        transform: `translateY(${position}vh)` // исправлено на обратные кавычки
     });
 
     section.eq(sectionEQ).addClass('active').siblings().removeClass('active');
