@@ -1,0 +1,86 @@
+.color__menu{
+    background: url(../img/Slider.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.section__menu-title{
+    font-family: Play;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+
+.color__menu-item{
+    height: 100vh;
+    display: flex;
+}
+
+.color__title{
+    cursor: pointer;
+    border: none;
+    width: 6.375rem;
+    height: 100vh;
+    padding: 0;
+    background-color: #999;
+    position: relative;
+}
+
+.color__title--black{
+    background-color: #000;
+}
+
+.color__title--red{
+    background-color: #E01F3C;
+}
+
+.color__title-text{
+    transform: rotate(-90deg);
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 2.25rem;
+    font-weight: 700;
+    width: 18rem;
+    height: 15rem;
+    position: absolute;
+    top: 26rem;
+}
+
+.color__menu-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.color__menu-conteiner{
+    background-color: rgba(51, 53, 55, 0.90);
+}
+
+.color__menu-content{
+    padding-top: 1.9375rem;
+    padding-right: 3.3125rem;
+    padding-left: 2.375rem;
+}
+
+.color__menu-subtext{
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 16.014px;
+    font-style: normal;
+    font-weight: 400;
+}
+.color__menu-conteiner{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.color__menu-conteiner--active{
+    width: 32.75rem;
+    transition: all 0.5s ease;
+}
