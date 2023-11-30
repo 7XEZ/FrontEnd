@@ -792,25 +792,22 @@
               </h1>
             </div>
             <div class="video__player-container">
-              <div id="video-player" class="video__wrapper">
-                <div  class="video__elem"></div>
-                <div class="video__splash">
-                  <button class="video__start-btn">
-                  </button>
+                <div id="video-player" class="video__wrapper">
+                  <video id="video" class="player" poster="./img/Rectangle 9.png">
+                    <source src="./video/OLED.mp4">
+                  </video>
+                  <button src="./img/Group.png" alt="" class="play__btn"></button>
                 </div>
-              </div>
-              <div class="video__controls">
-                <button class="video__start"></button>
-                <div class="video__playback-block">
-                  <button class="video__playback"></button>
-                </div>
-                <div class="video__sound">
-                  <button class="video_vol"></button>
-                  <div class="video__vol-playback">
-                    <button class="vol-playback"></button>
+                <div class="video__controls">
+                  <div class="duration">
+                    <button  class="duration__img" alt=""></button>
+                    <input type="range" class="duration__len" id="duration__level" >
+                  </div>
+                  <div class="sound">
+                    <button  class="sound__img" alt=""></button>
+                    <input type="range" class="sound__len" id="sound__level" >
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </section>
@@ -1042,7 +1039,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://api-maps.yandex.ru/v3/?apikey=25e49dd6-a24e-4b89-b676-b8a6f47e37ea&lang=ru_RU"></script>
     <script src="./JS/fixed_menu.js"></script>
     <script src="./JS/slick.min.js"></script>
