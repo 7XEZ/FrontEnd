@@ -22,8 +22,23 @@ async function initMap() {
         }
         
     );
-
-    
     
     map.addChild(new YMapDefaultSchemeLayer());
+
+    const markerElement = document.createElement('div');
+    markerElement.className = 'marker-class';
+    markerElement.innerText = "I'm marker!";
+    
+    const marker = new YMapMarker(
+      {
+        source: 'markerSource',
+        coordinates: [37.6222141688841,55.758106851670426],
+        draggable: true,
+        mapFollowsOnDrag: true
+      },
+      markerElement
+    );
+    
+    map.addChild(marker);
 }
+

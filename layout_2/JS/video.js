@@ -1,65 +1,47 @@
-let player;
-const playerCont = $('.video__player-container');
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById("video");
+  const playButton = document.querySelector(".play__btn");
+  const volumeSlider = document.getElementById("sound__level");
+  const durationSlider = document.getElementById("duration__level");
+  const durationImage = document.querySelector(".duration__img");
 
-let eventInit = () =>{
-    $('.video__start').click(e =>{
-        e.preventDefault();
+  // Установка начальной громкости и продолжительности
+  video.volume = 0.5; // Начальная громкость 50%
+  volumeSlider.value = video.volume * 100;
+  durationSlider.value = 0;
 
-        const btn = $(e.currentTarget);
-
-        if (playerCont.hasClass("video__player-container--active")) {
-            playerCont.removeClass("video__player-container--active");
-            player.pauseVideo();
-          } else {
-            playerCont.addClass("video__player-container--active");
-            player.playVideo();
-          }
-
-    });
-}
-
-const onPlayerReady = () => {
-    let interval;
-    const durationSec = player.getDuration();
-    
-    $(".player__duration-estimate").text(formatTime(durationSec));
-    
-    if (typeof interval !== "undefined") {
-      clearInterval(interval);
-    }
-
-    interval = setInterval(() => {
-        const completedSec = player.getCurrentTime();
-        const completedPercent = (completedSec / durationSec) * 100;
-      
-        $(".player__playback-button").css({
-          left: `${completedPercent}%`
-        });
-       
-        $(".player__duration-completed").text(formatTime(completedSec));
-      }, 1000);
-    
-   };
-
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("video-player", {
-    height: '405',
-    width: '660',
-    videoId: 'LXb3EKWsInQ',
-    events: {
-    'onReady': onPlayerReady,
-    // 'onStateChange': onPlayerStateChange
-    },
-    playerVars: {
-        controls: 0,
-        disablekb: 1,
-        showinfo: 0,
-        rel: 0,
-        autoplay: 0,
-        modestbranding: 0
+  // Функция для запуска/остановки видео
+  function togglePlay() {
+      if (video.paused) {
+          video.play();
+          playButton.classList.add("play__btn--active");
+          durationImage.classList.add("duration__img--active"); // Добавление класса при воспроизведении
+      } else {
+          video.pause();
+          playButton.classList.remove("play__btn--active");
+          durationImage.classList.remove("duration__img--active"); // Удаление класса при остановке
       }
-  });
-}
+  }
 
-eventInit();
+  video.addEventListener("click", togglePlay);
+  playButton.addEventListener("click", togglePlay);
+
+  // Изменение громкости
+  volumeSlider.addEventListener("input", function() {
+      video.volume = this.value / 100;
+  });
+
+  // Изменение текущего времени видео
+  durationSlider.addEventListener("input", function() {
+      video.currentTime = (this.value / 100) * video.duration;
+  });
+
+  // Обновление слайдера продолжительности
+  video.addEventListener("loadedmetadata", function() {
+      durationSlider.max = video.duration;
+  });
+
+  video.addEventListener("timeupdate", function() {
+      durationSlider.value = (video.currentTime / video.duration) * 100;
+  });
+});
