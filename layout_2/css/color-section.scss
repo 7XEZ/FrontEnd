@@ -1,3 +1,18 @@
+$tablet:768px;
+$phone:480px;
+
+
+@mixin tablet{
+  @media screen and (max-width:$tablet){
+      @content;
+  }
+}
+
+@mixin phone{
+  @media screen and (max-width:$phone){
+      @content;
+  }
+}
 .color__menu{
     background: url(../img/Slider.jpg) no-repeat;
     background-size: cover;
@@ -50,6 +65,10 @@
     height: 15rem;
     position: absolute;
     top: 26rem;
+
+    @include phone(){
+        top:70rem;
+    }
 }
 
 .color__menu-list{

@@ -3,15 +3,10 @@
   position: relative;
 }
 
-.map__content {
-  height: 100%;
-  display: block;
-}
-.map__content img {
+#map__content {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: block;
 }
 
 .footer {

@@ -14,29 +14,16 @@ $phone:480px;
   }
 }
 
-
-
-
 .map{
     height: 100vh;
     position: relative;
 
 }
 
-
-
-
-.map__content{
+#map__content{
     height: 100%;
+    width: 100%;
     display: block;
-
-
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
 }
 
 .footer{
