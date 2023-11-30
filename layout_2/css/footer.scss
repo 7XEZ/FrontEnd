@@ -24,6 +24,10 @@ $phone:480px;
     height: 36rem;
     width: 100%;
     display: block;
+
+    @include phone(){
+        height: 73rem;
+    }
 }
 
 .footer{

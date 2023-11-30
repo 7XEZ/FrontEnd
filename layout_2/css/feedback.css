@@ -25,6 +25,11 @@
 .feedback__title {
   padding-top: 3rem;
 }
+@media screen and (max-width: 480px) {
+  .feedback__title {
+    padding-top: 17rem;
+  }
+}
 
 .feedback__title h1 {
   font-family: Play;

@@ -15,6 +15,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .team__title {
+    padding-top: 20rem;
+  }
+}
 
 .team__title-text {
   text-transform: uppercase;

@@ -45,6 +45,10 @@ $phone:480px;
 
 .features__title{
   padding-top: 3rem;
+
+  @include phone(){
+    padding-top: 14rem;
+  }
 }
 
 .features__title .features__title__text{

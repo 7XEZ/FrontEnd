@@ -50,6 +50,10 @@ $phone:480px;
 
 .feedback__title{
   padding-top: 3rem;
+
+  @include phone(){
+    padding-top: 17rem;
+  }
 }
 
 .feedback__title h1 {

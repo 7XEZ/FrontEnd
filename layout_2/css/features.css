@@ -23,6 +23,11 @@
 .features__title {
   padding-top: 3rem;
 }
+@media screen and (max-width: 480px) {
+  .features__title {
+    padding-top: 14rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .features__title .features__title__text {
