@@ -3,13 +3,13 @@
   position: relative;
 }
 
-#map__content {
+#map {
   height: 36rem;
   width: 100%;
   display: block;
 }
 @media screen and (max-width: 480px) {
-  #map__content {
+  #map {
     height: 73rem;
   }
 }
