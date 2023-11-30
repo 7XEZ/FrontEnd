@@ -791,6 +791,27 @@
                 как мы работаем
               </h1>
             </div>
+            <div class="video__player-container">
+              <div id="video-player" class="video__wrapper">
+                <div  class="video__elem"></div>
+                <div class="video__splash">
+                  <button class="video__start-btn">
+                  </button>
+                </div>
+              </div>
+              <div class="video__controls">
+                <button class="video__start"></button>
+                <div class="video__playback-block">
+                  <button class="video__playback"></button>
+                </div>
+                <div class="video__sound">
+                  <button class="video_vol"></button>
+                  <div class="video__vol-playback">
+                    <button class="vol-playback"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -912,9 +933,7 @@
         </section>
 
         <section data-sidemenu-theme="black" data-section-id="map" class="map">
-          <picture class="map__content">
-            <img src="./img/map.png" alt="">
-          </picture>
+          <div id="map__content"></div>
           <footer class="footer">
              <div class="footer__menu">
                <div class="col__adress">
@@ -1023,13 +1042,17 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=25e49dd6-a24e-4b89-b676-b8a6f47e37ea&lang=ru_RU"></script>
     <script src="./JS/fixed_menu.js"></script>
     <script src="./JS/slick.min.js"></script>
     <script src="./JS/color_menu.js"></script>
     <script src="./JS/feedback.js"></script>
+    <script src="./JS/video.js"></script>
     <script src="./JS/order.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/main.js"></script>
+    <script src="./JS/map.js"></script>
     <script src="./JS/burger.js"></script>
 </body>
 </html>
