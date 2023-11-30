@@ -4,7 +4,7 @@
 }
 
 #map__content {
-  height: 100%;
+  height: 36rem;
   width: 100%;
   display: block;
 }
@@ -137,4 +137,8 @@
             justify-content: center;
     text-align: center;
   }
+}
+
+.marker {
+  background: url(../img/marker.png);
 }

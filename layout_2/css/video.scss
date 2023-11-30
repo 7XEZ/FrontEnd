@@ -33,9 +33,6 @@
         align-items: center;
         flex-direction: column;
 
-        .video__wrapper{
-            background: none;
-        }
 
         .video__start-btn{
         display: none;
@@ -48,9 +45,16 @@
 
 
 .video__wrapper{
+    position: relative;
     width: 41.375rem;
     height: 24.4885rem;
-    background: url(../img/Rectangle\ 9.png) no-repeat;
+}
+
+
+.play__btn{
+    top: 40%;
+    left: 50%;
+    position: absolute;
 }
 
 .video__start{
@@ -61,94 +65,65 @@
 
 .video__controls{
     padding: 0 0.5rem;
-    align-items: center;
     display: flex;
     width: 41.375rem;
     background-color: #151515;
 }
 
-.video__duration-finished{
-    color: #fff;
-}
-
-.video__duration-estime{
-    color: #fff;
-}
-
-.video__splash{
-    height: 100%;
-    width: 100%;
+.duration{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
 }
 
-.video__start-btn{
-    cursor: pointer;
-    background: transparent;
-    border: none;
+.duration__len{
+    width: 28rem;
 }
 
-.video__start{
-    padding-right: 3rem;
-    height: 2rem;
-    width: 1rem;
-    background: url(../img/Group_sm.png) center center no-repeat;
-}
-
-.video__sound{
+.sound{
     display: flex;
-    align-items: center;
-    padding-left: 3rem;
+    justify-content: flex-end;
 }
 
-.video_vol{
-    padding-right: 3rem;
+.sound__img{
     cursor: pointer;
-    background-color: transparent;
     border: none;
-    height: 2rem;
-    width: 1rem;
+    width: 1.9824rem;
+    height: 2.097rem;
     background: url(../img/sound.png) center center no-repeat;
 }
 
-.video__playback-block{
-    position: relative;
-    align-items: center;
-    display: flex;
-    border: none;
-    background-color: #333;
-    width: 24.8245625rem;
-    height: 0.2237rem;
-
-}
-.video__playback{
-    position: absolute;
-    left: 0;
+.duration__img{
     cursor: pointer;
-    width: 0.8387rem;
-    height: 0.8387rem;
     border: none;
-    border-radius: 50%;
-    background-color: #E01F3D;
+    width: 1.9824rem;
+    height: 2.097rem;
+    background: url(../img/Group_sm.png) center center no-repeat;
 }
 
-.video__vol-playback{
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    width: 5rem;
-    height: 0.280375rem;
-}
-
-.vol-playback{
-    position: absolute;
-    left: 0;
+.play__btn{
+    visibility: visible;
     cursor: pointer;
-    width: 0.8387rem;
-    height: 0.8387rem;
+    width: 3rem;
+    height: 4.63rem;
     border: none;
-    border-radius: 50%;
-    background-color: #E01F3D;
+    background: url(../img/Group.png) center center no-repeat;
 }
+
+input[type="range"] {
+    accent-color: #E01F3D;
+  }
+
+  .duration__img--active{
+    width: 1.9824rem;
+    height: 2.097rem;
+    background: url(../img/pause.png)  center center no-repeat;
+  }
+
+  .play__btn--active{
+    visibility: hidden;
+  }
+
+  .player{
+    width: 41.375rem;
+    height: 26rem;
+  }
