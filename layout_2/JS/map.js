@@ -1,44 +1,35 @@
-initMap();
+let myMap;
+const init = () => {
+  myMap = new ymaps.Map("map", {
+    center: [55.744293, 37.606188],
+    zoom: 13,
+    controls: [],
+  });
 
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map__content'),
-
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.612552, 55.745650],
-                zoom: 13,
-                controls:[],
-            }
-        }
-        
-    );
-    
-    map.addChild(new YMapDefaultSchemeLayer());
-
-    const markerElement = document.createElement('div');
-    markerElement.className = 'marker-class';
-    markerElement.innerText = "I'm marker!";
-    
-    const marker = new YMapMarker(
+  let coords = [
+    [55.758106851670426,37.6222141688841],
+    [55.74973293036917,37.607966274596976],
+    [55.75888122717374,37.58307537493877],
+    [55.744359116710605,37.58195957598859],
+    ],
+    myCollection = new ymaps.GeoObjectCollection(
+      {},
       {
-        source: 'markerSource',
-        coordinates: [37.6222141688841,55.758106851670426],
-        draggable: true,
-        mapFollowsOnDrag: true
-      },
-      markerElement
+        draggable: false,
+        iconLayout: "default#image",
+        iconImageHref: "./img/marker.png",
+        iconImageSize: [46, 57],
+        iconImageOffset: [-35, -52],
+      }
     );
-    
-    map.addChild(marker);
-}
 
+  for (let i = 0; i < coords.length; i++) {
+    myCollection.add(new ymaps.Placemark(coords[i]));
+  }
+
+  myMap.geoObjects.add(myCollection);
+
+  myMap.behaviors.disable("scrollZoom");
+};
+
+ymaps.ready(init);
