@@ -75,6 +75,11 @@
   width: 41.375rem;
   height: 24.4885rem;
 }
+@media screen and (max-width: 768px) {
+  .video__wrapper {
+    height: 24rem;
+  }
+}
 
 .play__btn {
   top: 40%;
@@ -107,6 +112,11 @@
     height: 3rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .video__controls {
+    height: 3rem;
+  }
+}
 
 .duration {
   display: -webkit-box;
@@ -129,9 +139,17 @@
   }
 }
 
+.sound__len {
+  width: 8.5rem;
+}
 @media screen and (max-width: 480px) {
   .sound__len {
     width: 11rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sound__len {
+    width: 8rem;
   }
 }
 
@@ -198,6 +216,12 @@ input[type=range] {
   height: 26rem;
 }
 @media screen and (max-width: 480px) {
+  .player {
+    width: 42rem;
+    height: 24rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .player {
     width: 42rem;
     height: 24rem;

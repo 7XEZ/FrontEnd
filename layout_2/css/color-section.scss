@@ -74,6 +74,8 @@ $phone:480px;
 .color__menu-list{
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 1;
 }
 
 .color__menu-conteiner{

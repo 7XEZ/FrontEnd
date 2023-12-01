@@ -71,6 +71,10 @@ $phone:480px;
     position: relative;
     width: 41.375rem;
     height: 24.4885rem;
+
+    @include tablet(){
+        height: 24rem;
+    }
 }
 
 
@@ -99,6 +103,10 @@ $phone:480px;
     @include phone(){
         height: 3rem;
     }
+
+    @include tablet(){
+        height: 3rem;
+    }
 }
 
 .duration{
@@ -120,6 +128,10 @@ width: 8.5rem;
 
     @include phone(){
         width: 11rem;
+    }
+
+    @include tablet(){
+        width: 8rem;
     }
 }
 
@@ -179,6 +191,11 @@ input[type="range"] {
     height: 26rem;
 
     @include phone(){
+        width: 42rem;
+        height: 24rem;
+    }
+
+    @include tablet(){
         width: 42rem;
         height: 24rem;
     }
