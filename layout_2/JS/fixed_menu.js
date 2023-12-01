@@ -54,6 +54,7 @@ $(window).on("wheel", e => {
 $(window).on("keydown", e =>{
     const tagName = e.target.tagName.toLowerCase();
 
+
     if(tagName != "input" && tagName != "textarea"){
 
         switch(e.keyCode){
@@ -67,8 +68,6 @@ $(window).on("keydown", e =>{
                 break
         }
     }
-
-
 });
 
 $("[data-scroll-to]").click(e =>{
@@ -85,6 +84,9 @@ $("[data-scroll-to]").click(e =>{
 
 $("body").swipe({
     swipe: function(event, direction){
+        if ($(event.target).is('input, textarea, select')) {
+            return; 
+        }
         if (direction == "up") scrollViewport("next");
         if (direction == "down") scrollViewport("prev");
     },
