@@ -52,9 +52,9 @@ $(window).on("wheel", e => {
 
 
 $(window).on("keydown", e =>{
-    const TagName = e.target.TagName.toLowerCase();
+    const tagName = e.target.tagName.toLowerCase();
 
-    if(TagName != "input" && TagName != "textarea"){
+    if(tagName != "input" && tagName != "textarea"){
 
         switch(e.keyCode){
             case 38:
