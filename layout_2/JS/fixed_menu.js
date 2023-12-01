@@ -23,7 +23,7 @@ const performTransition = sectionEQ => {
 
     section.eq(sectionEQ).addClass('active').siblings().removeClass('active');
 
-    sidemenu.find("fixed__item").eq(sectionEQ).addClass("active").siblings().removeClass("active");
+    sidemenu.find(".fixed__item").eq(sectionEQ).addClass("fixed__item--active").siblings().removeClass("fixed__item--active");
 }
 
 const scrollViewport = direction => {
